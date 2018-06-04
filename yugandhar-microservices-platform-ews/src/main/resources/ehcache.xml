@@ -1,0 +1,109 @@
+<config xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+	xmlns='http://www.ehcache.org/v3' xmlns:jsr107='http://www.ehcache.org/v3/jsr107'>
+
+	<service>
+		<jsr107:defaults>
+			<jsr107:cache name="CONFIGTXNREGISTRY_BUSKEY" template="heap-cache" />
+			<jsr107:cache name="CONFIGERRORCODEREGISTRY_BUSKEY"
+				template="heap-cache" />
+			<jsr107:cache name="CONFIGAPPPROPERTIES_BUSKEY"
+				template="heap-cache" />
+			<jsr107:cache name="CONFIGLANGUAGECODE_BUSKEY" template="heap-cache" />
+			<jsr107:cache name="REFLANGUAGECODE_BUSKEY" template="heap-cache" />
+			<jsr107:cache name="REFCOUNTRYISO_BUSKEY" template="heap-cache" />
+			<jsr107:cache name="REFCURRENCY_BUSKEY" template="heap-cache" />
+			<jsr107:cache name="AUTHROLESREGISTRY_BUSKEY" template="heap-cache" />
+			<jsr107:cache name="AUTHUSERREGISTRY_BUSKEY" template="heap-cache" />
+			<jsr107:cache name="AUTHUSERROLEACCESSCONTROL_BUSKEY"
+				template="heap-cache" />
+			<jsr107:cache name="AUTHUSERROLEASSOC_BUSKEY" template="heap-cache" />
+		</jsr107:defaults>
+	</service>
+
+
+	<cache alias="CONFIGTXNREGISTRY_BUSKEY" uses-template="heap-cache">
+		<expiry>
+			<ttl unit="seconds">1296000</ttl>
+		</expiry>
+	</cache>
+
+	<cache alias="CONFIGERRORCODEREGISTRY_BUSKEY" uses-template="heap-cache">
+		<expiry>
+			<ttl unit="seconds">1296000</ttl>
+		</expiry>
+	</cache>
+
+	<cache alias="REFLANGUAGECODE_BUSKEY" uses-template="heap-cache">
+		<expiry>
+			<ttl unit="seconds">1296000</ttl>
+		</expiry>
+	</cache>
+
+	<cache alias="REFCOUNTRYISO_BUSKEY" uses-template="heap-cache">
+		<expiry>
+			<ttl unit="seconds">1296000</ttl>
+		</expiry>
+	</cache>
+
+	<cache alias="REFCURRENCY_BUSKEY" uses-template="heap-cache">
+		<expiry>
+			<ttl unit="seconds">1296000</ttl>
+		</expiry>
+	</cache>
+
+	<cache alias="CONFIGAPPPROPERTIES_BUSKEY" uses-template="heap-cache">
+		<expiry>
+			<ttl unit="seconds">1296000</ttl>
+		</expiry>
+	</cache>
+
+	<cache alias="CONFIGLANGUAGECODE_BUSKEY" uses-template="heap-cache">
+		<expiry>
+			<ttl unit="seconds">1296000</ttl>
+		</expiry>
+	</cache>
+
+	<cache alias="AUTHROLESREGISTRY_BUSKEY" uses-template="heap-cache">
+		<expiry>
+			<ttl unit="seconds">1296000</ttl>
+		</expiry>
+	</cache>
+
+	<cache alias="AUTHUSERREGISTRY_BUSKEY" uses-template="heap-cache">
+		<expiry>
+			<ttl unit="seconds">1296000</ttl>
+		</expiry>
+	</cache>
+
+	<cache alias="AUTHUSERROLEACCESSCONTROL_BUSKEY" uses-template="heap-cache">
+		<expiry>
+			<ttl unit="seconds">1296000</ttl>
+		</expiry>
+	</cache>
+
+	<cache alias="AUTHUSERROLEASSOC_BUSKEY" uses-template="heap-cache">
+		<expiry>
+			<ttl unit="seconds">1296000</ttl>
+		</expiry>
+	</cache>
+
+	<cache-template name="heap-cache">
+		<listeners>
+			<listener>
+				<class>com.yugandhar.cache.ehcache.eventlogger.EhcacheEventLogger
+				</class>
+				<event-firing-mode>ASYNCHRONOUS</event-firing-mode>
+				<event-ordering-mode>UNORDERED</event-ordering-mode>
+				<events-to-fire-on>CREATED</events-to-fire-on>
+				<events-to-fire-on>UPDATED</events-to-fire-on>
+				<events-to-fire-on>EXPIRED</events-to-fire-on>
+				<events-to-fire-on>REMOVED</events-to-fire-on>
+				<events-to-fire-on>EVICTED</events-to-fire-on>
+			</listener>
+		</listeners>
+		<resources>
+			<heap unit="entries">2000</heap>
+			<!-- <offheap unit="MB">100</offheap> unit of measure is case sensitive! -->
+		</resources>
+	</cache-template>
+</config>

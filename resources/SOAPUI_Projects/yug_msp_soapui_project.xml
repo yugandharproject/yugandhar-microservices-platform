@@ -1,0 +1,1359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="86b989d0-54a8-4211-bf6c-f6bc36d4c2cf" activeEnvironment="Default" name="YUG_MSP" soapui-version="5.2.1" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="TestSuite" value="MSP_Testsuite"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Save Project" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Export All" value="true"/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="Root Folder" value="C:\Workspaces\MySQL\SOAPUIResults"/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="Endpoint" value="http://localhost:8090"/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" id="9ac3f21b-99ac-4dc3-8834-457ea6e48b6d" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:8091" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://localhost:8091</con:endpoint></con:endpoints><con:resource name="YugandharRequestProcessor" path="/rest/YugandharRequestProcessor" id="c23299f3-b09e-4e99-98dc-5e674c9ea941"><con:settings/><con:parameters/><con:method name="YugandharRequestProcessor" id="449e28c9-141c-4fab-9fdb-dcc8aca16818" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:yug="http://localhost/YugandharBootProject-0.0.1-SNAPSHOT/rest/YugandharRequestProcessor">yug:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Request 1" id="173aabd9-de8f-49b4-97ed-4321b50e00ce" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8090</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="565c93c3-b093-4eff-b6fc-aa97f09ca88d" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:8090" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://localhost:8090</con:endpoint></con:endpoints><con:resource name="YugandharRequestProcessor" path="/yugandhar-microservices-platform-jeec-1.0.0.RELEASE/rest/YugandharRequestProcessor" id="33221cd4-8622-455e-9381-d04258b8527e"><con:settings/><con:parameters/><con:method name="YugandharRequestProcessor" id="4bf46112-3f34-4092-adb6-a34cbc5472bc" method="GET"><con:settings/><con:parameters/><con:request name="Request 1" id="a28efef3-dc40-4042-afc3-5d47f293eecd" mediaType="application/json"><con:settings/><con:endpoint>http://localhost:8090</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="6bde2ab0-9669-4242-9f1d-2e9e1cd2643c" name="MSP_Testsuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="7c33784d-4f6e-4de9-88de-75717ca9f8d2" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="AuthFramework" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="createAuthRolesRegistryBase" id="1eed50ae-b18d-4228-811b-cfd471a37990"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="createAuthRolesRegistryBase" id="8dbb347d-a26a-4656-a8a1-8d191e2373ee" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+	"txnHeader": {
+	 "requesterLanguage": "1",
+      "requesterLocale": null,
+      "userName": "admin",
+      "userRole": "admin",
+      "accessToken": null,
+      "txnCorrelationId": null,
+      "txnMessageId": "1234567890123",
+      "requestOriginSource": null,
+      "requesterSystem": null,
+      "paginationStartIndex": null,
+      "paginationEndIndex": null,
+      "paginationTotalResultCount": null,
+	  "transactionServiceName": "createAuthRolesRegistryBase"
+	},
+	"txnPayload": {
+			 "authRolesRegistryDO":        {
+			"roleName": "TESTROLE",
+			"description": "TESTROLE"
+      }
+		
+	}
+	
+}</con:request><con:originalUri>http://localhost/YugandharBootProject-0.0.1-SNAPSHOT/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="39b3b466-1744-4005-a167-bfb02e7c60ab" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer1" id="fd15c929-4226-4402-aac3-5927d6002e86"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>idpk</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>createAuthRolesRegistryBase</con:sourceStep><con:sourcePath>txnPayload.authRolesRegistryDO.idPk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>updateAuthRolesRegistryBase</con:targetStep><con:targetPath>txnPayload.authRolesRegistryDO.idPk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>version</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>createAuthRolesRegistryBase</con:sourceStep><con:sourcePath>txnPayload.authRolesRegistryDO.version</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>updateAuthRolesRegistryBase</con:targetStep><con:targetPath>txnPayload.authRolesRegistryDO.version</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>idPkToUserRoleAssoc</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>createAuthRolesRegistryBase</con:sourceStep><con:sourcePath>txnPayload.authRolesRegistryDO.idPk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>createAuthUserRoleAssocBase</con:targetStep><con:targetPath>txnPayload.authUserRoleAssocDO.authRolesRegistryIdpk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>idPkToCreateAuthUserRoleAccessControl</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>createAuthRolesRegistryBase</con:sourceStep><con:sourcePath>txnPayload.authRolesRegistryDO.idPk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>createAuthUserroleAccesscontrolBase</con:targetStep><con:targetPath>txnPayload.authUserroleAccesscontrolDO.authUserRoleRegistryIdpk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>roleName</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>createAuthRolesRegistryBase</con:sourceStep><con:sourcePath>txnPayload.authRolesRegistryDO.roleName</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>updateAuthRolesRegistryBase</con:targetStep><con:targetPath>txnPayload.authRolesRegistryDO.roleName</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer18" id="f5cf8d58-daf6-4864-80e0-75fc22c5a8cf"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>roleName</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>createAuthRolesRegistryBase</con:sourceStep><con:sourcePath>txnPayload.authRolesRegistryDO.roleName</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>searchAuthRoles</con:targetStep><con:targetPath>txnPayload.searchAuthAccessControlDO.roleName</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>roleName</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>createAuthRolesRegistryBase</con:sourceStep><con:sourcePath>txnPayload.authRolesRegistryDO.roleName</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>searchAuthUsers</con:targetStep><con:targetPath>txnPayload.searchAuthAccessControlDO.roleName</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="updateAuthRolesRegistryBase" id="c0dac80d-fd52-425a-9368-336f3619f1e2"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="updateAuthRolesRegistryBase" id="743750ce-35cc-4049-b3ae-1a214ee3708e" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "txnHeader":    {
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "updateAuthRolesRegistryBase"
+   },
+   "txnPayload": {"authRolesRegistryDO":    {
+      "updatedByUser": "admin",
+      "createdTs": "2018-05-20T10.52.37.953+0000",
+      "updatedTs": "2018-05-20T10.52.37.953+0000",
+      "description": "TEST",
+      "roleName": "TESTROLE",
+      "idPk": "6f1e17fb-a273-4249-bb08-e9e613c4eda3",
+      "version": 0,
+      "updatedByTxnId": "1234567890123"
+   }}
+}</con:request><con:originalUri>http://localhost/YugandharBootProject-0.0.1-SNAPSHOT/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="426fd4bc-963e-4217-955f-d454819988a9" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer2" id="c416d525-a6e2-408b-bc20-ea17640b40be"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>idPk</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>updateAuthRolesRegistryBase</con:sourceStep><con:sourcePath>txnPayload.authRolesRegistryDO.idPk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>retrieveAuthRolesRegistryBase</con:targetStep><con:targetPath>txnPayload.authRolesRegistryDO.idPk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="retrieveAuthRolesRegistryBase" id="7cb95dfa-6343-477e-af9e-b7a7e44ce8ba"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="retrieveAuthRolesRegistryBase" id="d2a47d51-762a-46ee-867b-76af62fdf650" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "txnPayload": {"authRolesRegistryDO": {"idPk": "6f1e17fb-a273-4249-bb08-e9e613c4eda3"}},
+   "txnHeader":    {
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "retrieveAuthRolesRegistryBase"
+   }
+}</con:request><con:originalUri>http://localhost/YugandharBootProject-0.0.1-SNAPSHOT/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="1ece28be-55e5-466f-94bc-9decf47994ff" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer3" id="3d8a89fe-4a4e-45d4-858c-5b8669d5b6c5"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>roleName</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>retrieveAuthRolesRegistryBase</con:sourceStep><con:sourcePath>txnPayload.authRolesRegistryDO.roleName</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>findAuthRolesRegistryByBusinessKeyBase</con:targetStep><con:targetPath>txnPayload.authRolesRegistryDO.roleName</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="findAuthRolesRegistryByBusinessKeyBase" id="d7426e54-9766-48c0-bc02-e0814412a356"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="findAuthRolesRegistryByBusinessKeyBase" id="a2c7ec52-c72e-460a-8288-c6207b1a9623" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "txnPayload": {"authRolesRegistryDO": {"roleName": "TESTROLE"}},
+   "txnHeader":    {
+      "txnMessageId": "1234567890123",
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "findAuthRolesRegistryByBusinessKeyBase"
+   }
+}</con:request><con:originalUri>http://localhost/YugandharBootProject-0.0.1-SNAPSHOT/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="3caaeeda-05bb-468d-b32d-f0ca97766865" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer4" id="1cbcda14-91f8-45f6-b5f7-1d8d9c0db5a7"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/></con:testStep><con:testStep type="restrequest" name="createAuthUserRegistryBase" id="53a43939-ee9f-47f6-9087-45249329a7f1"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="createAuthUserRegistryBase" id="20eceab8-4873-4c9a-afe0-4d58f9d9d299" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+	"txnHeader": {
+	 "requesterLanguage": "1",
+      "requesterLocale": null,
+      "userName": "admin",
+      "userRole": "admin",
+      "accessToken": null,
+      "txnCorrelationId": null,
+      "txnMessageId": "1234567890123",
+      "requestOriginSource": null,
+      "requesterSystem": null,
+      "paginationStartIndex": null,
+      "paginationEndIndex": null,
+      "paginationTotalResultCount": null,
+	  "transactionServiceName": "createAuthUserRegistryBase"
+	},
+	"txnPayload": {
+			 "authUserRegistryDO":        {
+			"userName": "TESTUSER",
+			"description": "TEST USER"
+      }
+		
+	}
+	
+}</con:request><con:originalUri>http://localhost/YugandharBootProject-0.0.1-SNAPSHOT/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="fafeb97d-34d7-401c-bae2-8c3c70555048" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer5" id="8dfe5e77-20a3-4cd2-a0fb-ffebfee5ce0e"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>idPk</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>createAuthUserRegistryBase</con:sourceStep><con:sourcePath>txnPayload.authUserRegistryDO.idPk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>updateAuthUserRegistryBase</con:targetStep><con:targetPath>txnPayload.authUserRegistryDO.idPk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>version</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>createAuthUserRegistryBase</con:sourceStep><con:sourcePath>txnPayload.authUserRegistryDO.version</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>updateAuthUserRegistryBase</con:targetStep><con:targetPath>txnPayload.authUserRegistryDO.version</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>idPkToAuthUserRoleAssoc</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>createAuthUserRegistryBase</con:sourceStep><con:sourcePath>txnPayload.authUserRegistryDO.idPk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>createAuthUserRoleAssocBase</con:targetStep><con:targetPath>txnPayload.authUserRoleAssocDO.authUserRegistryIdpk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>userName</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>createAuthUserRegistryBase</con:sourceStep><con:sourcePath>txnPayload.authUserRegistryDO.userName</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>updateAuthUserRegistryBase</con:targetStep><con:targetPath>txnPayload.authUserRegistryDO.userName</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer19" id="c44243a1-1e66-4acf-925e-c335c3692066"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>userName</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>createAuthUserRegistryBase</con:sourceStep><con:sourcePath>txnPayload.authUserRegistryDO.userName</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>searchAuthUsers</con:targetStep><con:targetPath>txnPayload.searchAuthAccessControlDO.userName</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>roleName</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>createAuthUserRegistryBase</con:sourceStep><con:sourcePath>txnPayload.authUserRegistryDO.userName</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>searchAuthRoles</con:targetStep><con:targetPath>txnPayload.searchAuthAccessControlDO.userName</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="updateAuthUserRegistryBase" id="7fd87b84-133c-4091-b78d-6e8f497acdac"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="updateAuthUserRegistryBase" id="f6030ae1-d899-443c-ab55-dcdedbbc94ed" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "responseCode": "SUCCESS",
+   "txnPayload": {"authUserRegistryDO":    {
+      "updatedByUser": "admin",
+      "updatedTs": "2018-05-20T10.54.35.435+0000",
+      "createdTs": "2018-05-20T10.54.35.435+0000",
+      "description": "TEST USER regression",
+      "userName": "TESTUSER",
+      "idPk": "c50e713c-270d-486c-a8bb-ac3c3a89ed1e",
+      "updatedByTxnId": "1234567890123",
+      "version": 0
+   }},
+   "txnHeader":    {
+      "totalExecutionTimeMillies": "22",
+      "txnMessageId": "1234567890123",
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "updateAuthUserRegistryBase"
+   }
+}</con:request><con:originalUri>http://localhost/YugandharBootProject-0.0.1-SNAPSHOT/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="928c6d12-0250-4e4d-9a20-093dd279f1ea" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer6" id="191a5284-0722-4580-a016-36ac646ca910"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>idPk</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>updateAuthUserRegistryBase</con:sourceStep><con:sourcePath>txnPayload.authUserRegistryDO.idPk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>retrieveAuthUserRegistryBase</con:targetStep><con:targetPath>txnPayload.authUserRegistryDO.idPk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="retrieveAuthUserRegistryBase" id="02e78ca3-d301-452a-b3bd-04ddf9f584f0"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="retrieveAuthUserRegistryBase" id="53c57678-a150-4db2-ac89-871e98b7c61b" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "txnHeader":    {
+      "txnMessageId": "1234567890123",
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "retrieveAuthUserRegistryBase"
+   },
+   "txnPayload": {"authUserRegistryDO": {"idPk": "c50e713c-270d-486c-a8bb-ac3c3a89ed1e"}}
+}</con:request><con:originalUri>http://localhost/YugandharBootProject-0.0.1-SNAPSHOT/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="2c3b547b-1f5f-4f89-878e-1c15185b181d" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer7" id="0c54ef1f-da6d-4f55-8786-0a548db3420b"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>userName</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>retrieveAuthUserRegistryBase</con:sourceStep><con:sourcePath>txnPayload.authUserRegistryDO.userName</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>findAuthUserRegistryByBusinessKeyBase</con:targetStep><con:targetPath>txnPayload.authUserRegistryDO.userName</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="findAuthUserRegistryByBusinessKeyBase" id="2b3d4c50-e6f8-4523-bb03-bf97daf298bf"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="findAuthUserRegistryByBusinessKeyBase" id="8e029b64-dc8b-4919-bd03-4c6fda0300d6" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "txnHeader":    {
+      "txnMessageId": "1234567890123",
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "findAuthUserRegistryByBusinessKeyBase"
+   },
+   "txnPayload": {"authUserRegistryDO": {"userName": "TESTUSER"}}
+}</con:request><con:originalUri>http://localhost/YugandharBootProject-0.0.1-SNAPSHOT/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="6a953b49-0c1f-43f0-887f-36ac8a94fbb4" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="createAuthUserRoleAssocBase" id="219c28d3-7beb-4afe-82f0-d0c648e5470d"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="createAuthUserRoleAssocBase" id="837bb15f-dedb-4fb0-9634-acf2b7a2b8e3" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "txnHeader":    {
+      "txnMessageId": "1234567890123",
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "createAuthUserRoleAssocBase"
+   },
+   "txnPayload": {"authUserRoleAssocDO":    {
+      "authUserRegistryIdpk": "c50e713c-270d-486c-a8bb-ac3c3a89ed1e",
+      "authRolesRegistryIdpk": "6f1e17fb-a273-4249-bb08-e9e613c4eda3",
+      "description": "TestRole to TestUSer Mapping"
+   }}
+}</con:request><con:originalUri>http://localhost/YugandharBootProject-0.0.1-SNAPSHOT/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="cf925b79-833c-4d26-a819-997e5782a9e5" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer8" id="bc56c86d-e931-4bc9-86c9-ae896c198a64"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>idPk</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>createAuthUserRoleAssocBase</con:sourceStep><con:sourcePath>txnPayload.authUserRoleAssocDO.idPk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>updateAuthUserRoleAssocBase</con:targetStep><con:targetPath>txnPayload.authUserRoleAssocDO.idPk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>version</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>createAuthUserRoleAssocBase</con:sourceStep><con:sourcePath>txnPayload.authUserRoleAssocDO.version</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>updateAuthUserRoleAssocBase</con:targetStep><con:targetPath>txnPayload.authUserRoleAssocDO.version</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>authUserRegistryIdpk</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>createAuthUserRoleAssocBase</con:sourceStep><con:sourcePath>txnPayload.authUserRoleAssocDO.authUserRegistryIdpk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>updateAuthUserRoleAssocBase</con:targetStep><con:targetPath>txnPayload.authUserRoleAssocDO.authUserRegistryIdpk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>authRolesRegistryIdpk</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>createAuthUserRoleAssocBase</con:sourceStep><con:sourcePath>txnPayload.authUserRoleAssocDO.authRolesRegistryIdpk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>updateAuthUserRoleAssocBase</con:targetStep><con:targetPath>txnPayload.authUserRoleAssocDO.authRolesRegistryIdpk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="updateAuthUserRoleAssocBase" id="996e82f7-be02-40b3-9c9b-e9698c5cc516"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="updateAuthUserRoleAssocBase" id="e5eb831e-84aa-4836-b677-d74eef0f550b" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "txnHeader":    {
+      "totalExecutionTimeMillies": "38",
+      "txnMessageId": "1234567890123",
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "updateAuthUserRoleAssocBase"
+   },
+   "txnPayload": {"authUserRoleAssocDO":    {
+      "updatedByUser": "admin",
+      "authUserRegistryIdpk": "c50e713c-270d-486c-a8bb-ac3c3a89ed1e",
+      "createdTs": "2018-05-20T10.59.10.261+0000",
+      "updatedTs": "2018-05-20T10.59.10.261+0000",
+      "authRolesRegistryIdpk": "6f1e17fb-a273-4249-bb08-e9e613c4eda3",
+      "description": "TestRole to TestUSer Map",
+      "idPk": "fa8f93b1-437a-4735-98d2-50511e813481",
+      "version": 0,
+      "updatedByTxnId": "1234567890123"
+   }}
+}</con:request><con:originalUri>http://localhost/YugandharBootProject-0.0.1-SNAPSHOT/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="75e7f1dd-e95a-4640-be86-57afb0744a11" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer9" id="d58e183c-f012-4c64-b007-e0d1b847fdaf"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>idPk</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>updateAuthUserRoleAssocBase</con:sourceStep><con:sourcePath>txnPayload.authUserRoleAssocDO.idPk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>retrieveAuthUserRoleAssocBase</con:targetStep><con:targetPath>txnPayload.authUserRoleAssocDO.idPk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="retrieveAuthUserRoleAssocBase" id="a1437112-841f-4188-ab28-07cafaa0de9f"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="retrieveAuthUserRoleAssocBase" id="6714a68e-27fe-4b91-90e4-43586318b549" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "txnPayload": {"authUserRoleAssocDO": {"idPk": "fa8f93b1-437a-4735-98d2-50511e813481"}},
+   "txnHeader":    {
+      "totalExecutionTimeMillies": "28",
+      "txnMessageId": "1234567890123",
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "retrieveAuthUserRoleAssocBase"
+   }
+}</con:request><con:originalUri>http://localhost/YugandharBootProject-0.0.1-SNAPSHOT/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="23692ecb-929b-4562-a896-663a46240dc8" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer10" id="53763c42-1b71-40d0-b12d-dc1919839f32"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>authUserRegistryIdpk</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>retrieveAuthUserRoleAssocBase</con:sourceStep><con:sourcePath>txnPayload.authUserRoleAssocDO.authUserRegistryIdpk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>findAuthUserRoleAssocByBusinessKeyBase</con:targetStep><con:targetPath>txnPayload.authUserRoleAssocDO.authUserRegistryIdpk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>authRoleRegistryIdPk</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>retrieveAuthUserRoleAssocBase</con:sourceStep><con:sourcePath>txnPayload.authUserRoleAssocDO.authRolesRegistryIdpk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>findAuthUserRoleAssocByBusinessKeyBase</con:targetStep><con:targetPath>txnPayload.authUserRoleAssocDO.authRolesRegistryIdpk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="findAuthUserRoleAssocByBusinessKeyBase" id="3456bf58-f7b0-4bd5-9b92-41b99834f4ae"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="findAuthUserRoleAssocByBusinessKeyBase" id="559567fb-d61b-40d1-94fa-74ba0ab52dab" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "txnHeader":    {
+      "txnMessageId": "1234567890123",
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "findAuthUserRoleAssocByBusinessKeyBase"
+   },
+   "txnPayload": {"authUserRoleAssocDO":    {
+      "authUserRegistryIdpk": "c50e713c-270d-486c-a8bb-ac3c3a89ed1e",
+      "authRolesRegistryIdpk": "6f1e17fb-a273-4249-bb08-e9e613c4eda3"
+   }}
+}</con:request><con:originalUri>http://localhost/YugandharBootProject-0.0.1-SNAPSHOT/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="222c2ff6-e212-45d2-84c3-2a156c962b20" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer11" id="0c18f648-fbf3-42ee-b66c-1c78fd794df9"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>authUserRegistryIdpk</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>retrieveAuthUserRoleAssocBase</con:sourceStep><con:sourcePath>txnPayload.authUserRoleAssocDO.authUserRegistryIdpk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>findAllRecordsByAuthUserRegistryIdpkBase</con:targetStep><con:targetPath>txnPayload.authUserRoleAssocDO.authUserRegistryIdpk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="findAllRecordsByAuthUserRegistryIdpkBase" id="20a3db8f-7275-4822-aec9-10d84282fd15"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="findAllRecordsByAuthUserRegistryIdpkBase" id="60934d87-7720-4625-a212-5d910981942c" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "txnHeader":    {
+      "txnMessageId": "1234567890123",
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "findAllRecordsByAuthUserRegistryIdpkBase"
+   },
+   "txnPayload": {"authUserRoleAssocDO": {"authUserRegistryIdpk": "c50e713c-270d-486c-a8bb-ac3c3a89ed1e"}}
+}</con:request><con:originalUri>http://localhost/YugandharBootProject-0.0.1-SNAPSHOT/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="3aad9fa4-b95f-459d-a521-02688fb5727b" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer12" id="b17d3c88-6b6c-4ef0-9bb7-5f307d20d161"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>authRolesRegistryIdpk</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>retrieveAuthUserRoleAssocBase</con:sourceStep><con:sourcePath>txnPayload.authUserRoleAssocDO.authRolesRegistryIdpk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>findAllRecordsByAuthRolesRegistryIdpkBase</con:targetStep><con:targetPath>txnPayload.authUserRoleAssocDO.authRolesRegistryIdpk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="findAllRecordsByAuthRolesRegistryIdpkBase" id="4b577db1-1a87-4cf4-9be3-e07235106ecc"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="findAllRecordsByAuthRolesRegistryIdpkBase" id="bba4f4b8-865d-4f60-b521-f5e10504556f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "txnHeader":    {
+      "txnMessageId": "1234567890123",
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "findAllRecordsByAuthRolesRegistryIdpkBase"
+   },
+   "txnPayload": {"authUserRoleAssocDO": {"authRolesRegistryIdpk": "6f1e17fb-a273-4249-bb08-e9e613c4eda3"}}
+}</con:request><con:originalUri>http://localhost/YugandharBootProject-0.0.1-SNAPSHOT/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="63b31dc9-2619-4d5b-a2c1-6aafe36a0752" name="Script Assertion"><con:configuration><scriptText/></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer13" id="dc3dd888-ec36-422f-b3f2-daa0b753f1e0"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>authRolesRegistryIdpk</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>retrieveAuthUserRoleAssocBase</con:sourceStep><con:sourcePath>txnPayload.authUserRoleAssocDO.authRolesRegistryIdpk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>createAuthUserroleAccesscontrolBase</con:targetStep><con:targetPath>txnPayload.authUserroleAccesscontrolDO.authRolesRegistryIdpk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="createAuthUserroleAccesscontrolBase" id="77c6776d-005f-4df4-b06f-fc42c011c99a"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="createAuthUserroleAccesscontrolBase" id="352b452e-02a4-4f0d-9f61-165a2effa3df" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "txnPayload": {"authUserroleAccesscontrolDO":    {
+      "configTxnRegistryIdpk": "421",
+      "profileType": "ROLE",
+      "description": "USER access control",
+      "authUserRoleRegistryIdpk": "6f1e17fb-a273-4249-bb08-e9e613c4eda3"
+   }},
+   "txnHeader":    {
+      "txnMessageId": "1234567890123",
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "createAuthUserroleAccesscontrolBase"
+   }
+}</con:request><con:originalUri>http://localhost/YugandharBootProject-0.0.1-SNAPSHOT/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="856e2aa5-2754-46de-89f8-72834c003642" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer14" id="32174ae9-5090-481d-845e-96dc33350d6e"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>idPk</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>createAuthUserroleAccesscontrolBase</con:sourceStep><con:sourcePath>txnPayload.authUserroleAccesscontrolDO.idPk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>updateAuthUserroleAccesscontrolBase</con:targetStep><con:targetPath>txnPayload.authUserroleAccesscontrolDO.idPk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>version</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>createAuthUserroleAccesscontrolBase</con:sourceStep><con:sourcePath>txnPayload.authUserroleAccesscontrolDO.version</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>updateAuthUserroleAccesscontrolBase</con:targetStep><con:targetPath>txnPayload.authUserroleAccesscontrolDO.version</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>authUserRoleRegistryIdpk</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>createAuthUserroleAccesscontrolBase</con:sourceStep><con:sourcePath>txnPayload.authUserroleAccesscontrolDO.authUserRoleRegistryIdpk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>updateAuthUserroleAccesscontrolBase</con:targetStep><con:targetPath>txnPayload.authUserroleAccesscontrolDO.authUserRoleRegistryIdpk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="updateAuthUserroleAccesscontrolBase" id="4ce4a344-9146-4fa8-85f9-b87a6bcea186"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="updateAuthUserroleAccesscontrolBase" id="87deb777-8a6d-4219-a267-f99155146b47" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "txnPayload": {"authUserroleAccesscontrolDO":    {
+      "updatedByUser": "admin",
+      "configTxnRegistryIdpk": "421",
+      "profileType": "ROLE",
+      "description": "USER access control",
+      "authUserRoleRegistryIdpk": "6f1e17fb-a273-4249-bb08-e9e613c4eda3",
+      "idPk": "9e46552d-6449-4f5a-959f-1f6a7ace7bbb",
+      "version": 0
+   }},
+   "txnHeader":    {
+      "totalExecutionTimeMillies": "161",
+      "txnMessageId": "1234567890123",
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "updateAuthUserroleAccesscontrolBase"
+   }
+}</con:request><con:originalUri>http://localhost/YugandharBootProject-0.0.1-SNAPSHOT/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="ee6bb4cf-f127-4f2d-85e8-61702f687b5d" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer15" id="71fcb29e-4a54-4bc4-af0f-9ef9ed8ad8d9"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>idPk</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>updateAuthUserroleAccesscontrolBase</con:sourceStep><con:sourcePath>txnPayload.authUserroleAccesscontrolDO.idPk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>retrieveAuthUserroleAccesscontrolBase</con:targetStep><con:targetPath>txnPayload.authUserroleAccesscontrolDO.idPk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="retrieveAuthUserroleAccesscontrolBase" id="4f51a374-3f74-4c63-9da0-6e1cce7b6d9d"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="retrieveAuthUserroleAccesscontrolBase" id="a8540dd3-1a22-45a1-9510-0ad77c1cc20f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "txnHeader":    {
+      "txnMessageId": "1234567890123",
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "retrieveAuthUserroleAccesscontrolBase"
+   },
+   "txnPayload": {"authUserroleAccesscontrolDO": {"idPk": "9e46552d-6449-4f5a-959f-1f6a7ace7bbb"}}
+}</con:request><con:originalUri>http://localhost/YugandharBootProject-0.0.1-SNAPSHOT/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="09541269-cc62-476a-a9ee-1cf5863c1dfc" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer16" id="d0564777-574a-4949-8f35-65eaaac4299b"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>authUserRoleRegistryIdpk</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>retrieveAuthUserroleAccesscontrolBase</con:sourceStep><con:sourcePath>txnPayload.authUserroleAccesscontrolDO.authUserRoleRegistryIdpk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>findAuthUserroleAccesscontrolByBusinessKeyBase</con:targetStep><con:targetPath>txnPayload.authUserroleAccesscontrolDO.authUserRoleRegistryIdpk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>configTxnRegistryIdpk</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>retrieveAuthUserroleAccesscontrolBase</con:sourceStep><con:sourcePath>txnPayload.authUserroleAccesscontrolDO.configTxnRegistryIdpk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>findAuthUserroleAccesscontrolByBusinessKeyBase</con:targetStep><con:targetPath>txnPayload.authUserroleAccesscontrolDO.configTxnRegistryIdpk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="findAuthUserroleAccesscontrolByBusinessKeyBase" id="e00c0853-20a7-4279-b558-0ef12455c4ca"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="findAuthUserroleAccesscontrolByBusinessKeyBase" id="0b828abc-a20a-4506-8e14-e99534531ce2" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "txnHeader":    {
+      "txnMessageId": "1234567890123",
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "findAuthUserroleAccesscontrolByBusinessKeyBase"
+   },
+   "txnPayload": {"authUserroleAccesscontrolDO":    {
+      "profileType": "ROLE",
+      "configTxnRegistryIdpk": "421",
+      "authUserRoleRegistryIdpk": "6f1e17fb-a273-4249-bb08-e9e613c4eda3"
+   }}
+}</con:request><con:originalUri>http://localhost/YugandharBootProject-0.0.1-SNAPSHOT/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="b52c0598-525e-41dd-901c-ceafd09d10a9" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer17" id="c73fc4d0-9f83-424b-9c5c-71ea56de09f4"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>authUserRoleRegistryIdpk</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>retrieveAuthUserroleAccesscontrolBase</con:sourceStep><con:sourcePath>txnPayload.authUserroleAccesscontrolDO.authUserRoleRegistryIdpk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>findAuthUserroleAccesscontrolByRegistryIdpkBase</con:targetStep><con:targetPath>txnPayload.authUserroleAccesscontrolDO.authUserRoleRegistryIdpk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="findAuthUserroleAccesscontrolByRegistryIdpkBase" id="cdb79dcc-c06e-492b-905f-d985b563ca3e"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="findAuthUserroleAccesscontrolByRegistryIdpkBase" id="271dd756-ef0f-471a-8fc3-f487dc651891" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "responseCode": "SUCCESS",
+   "txnHeader":    {
+      "totalExecutionTimeMillies": "27",
+      "txnMessageId": "1234567890123",
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "findAuthUserroleAccesscontrolByRegistryIdpkBase"
+   },
+   "txnPayload": {"authUserroleAccesscontrolDO":    {
+      "profileType": "ROLE",
+      "authUserRoleRegistryIdpk": "6f1e17fb-a273-4249-bb08-e9e613c4eda3"
+   }}
+}</con:request><con:originalUri>http://localhost/YugandharBootProject-0.0.1-SNAPSHOT/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="cc23a42e-2614-4a5f-9893-2525875a36df" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="searchAuthRoles" id="7e3f6f7d-9aa6-4592-8de8-fca7c115da94"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="searchAuthRoles" id="03cba479-2a6b-466a-af9e-589829041680" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "txnHeader":    {
+      "txnMessageId": "1234567890123",
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "searchAuthRoles"
+   },
+   "txnPayload":    {
+      "paginationIndexOfCurrentSlice": 0,
+      "searchAuthAccessControlDO":       {
+         "userName": "TESTUSER",
+         "roleName": "TESTROLE",
+         "inquiryFilter": "ALL"
+      },
+      "paginationPageSize": 50
+   }
+}</con:request><con:originalUri>http://localhost/YugandharBootProject-0.0.1-SNAPSHOT/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="c5e95d90-9091-4c6f-bac5-e2aa9e246f69" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="searchAuthUsers" id="f0f328fc-d7e4-4663-8653-89f90acbd8b7"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="searchAuthUsers" id="ea4d8e0e-11b1-44d0-9045-d7efe27adeec" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "txnHeader":    {
+      "txnMessageId": "1234567890123",
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "searchAuthUsers"
+   },
+   "txnPayload":    {
+      "paginationIndexOfCurrentSlice": 0,
+      "searchAuthAccessControlDO":       {
+         "userName": "TESTUSER",
+         "roleName": "TESTROLE",
+         "inquiryFilter": "ALL"
+      },
+      "paginationPageSize": 50
+   }
+}</con:request><con:originalUri>http://localhost/YugandharBootProject-0.0.1-SNAPSHOT/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="86aff83e-236d-4963-9fdd-6e93bd56839c" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="searchAuthAccessControl" id="094bc586-fcce-4550-b22d-8f32e4ec4fba"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="searchAuthAccessControl" id="37855126-14a0-4ac4-8ec6-fd1d1fb37dcf" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+	"txnHeader": {
+	 "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "txnMessageId": "1234567890123",
+	  "transactionServiceName": "searchAuthAccessControl"
+	},
+	"txnPayload": {
+	 "paginationIndexOfCurrentSlice": 0,
+      "paginationPageSize": 50,	
+      	 "searchAuthAccessControlDO":       {
+			"userName": "TESTUSER",
+			"roleName": "TEST",
+			"txnserviceName": "findAllConfigLanguageCodesBase",
+			"inquiryFilter":"ACTIVE"
+	}
+}
+}
+	</con:request><con:originalUri>http://localhost/YugandharBootProject-0.0.1-SNAPSHOT/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="e926cbb7-3a1b-4f62-9f3c-25271109f22f" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="49493c1a-857c-4441-b335-a15ef7f16cae" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ConfigAppProperties" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="createConfigAppPropertiesBase" id="83535f00-ab51-4d3a-be90-0d15f3f28937"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="createConfigAppPropertiesBase" id="60a47d22-eb16-4f5b-96ca-d477161f4656" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+	"txnHeader": {
+	 "requesterLanguage": "1",
+      "requesterLocale": null,
+      "userName": "admin",
+      "userRole": "admin",
+      "accessToken": null,
+      "txnCorrelationId": null,
+      "txnMessageId": "00000000",
+      "requestOriginSource": null,
+      "requesterSystem": null,
+      "paginationStartIndex": null,
+      "paginationEndIndex": null,
+      "paginationTotalResultCount": null,
+	  "transactionServiceName": "createConfigAppPropertiesBase"
+	},
+	"txnPayload": {
+			 "configAppPropertiesDO":        {
+			"key": "testproperty",
+			"value": "108",
+			"valueDefault": "108",
+			"description": ""
+      }
+		
+	}
+	
+}</con:request><con:originalUri>http://localhost/YugandharBootProject-0.0.1-SNAPSHOT/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="293c021d-002d-4ceb-9da2-9a4bb3f89510" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="idTransfer" id="61b98a86-af88-497d-90b5-f0482dacfe9b"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>idPk</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>createConfigAppPropertiesBase</con:sourceStep><con:sourcePath>txnPayload.configAppPropertiesDO.idPk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>updateConfigAppProperties</con:targetStep><con:targetPath>txnPayload.configAppPropertiesDO.idPk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>version</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>createConfigAppPropertiesBase</con:sourceStep><con:sourcePath>txnPayload.configAppPropertiesDO.version</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>updateConfigAppProperties</con:targetStep><con:targetPath>txnPayload.configAppPropertiesDO.version</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="updateConfigAppProperties" id="5b097db0-a703-4fb6-a78d-eb898e57f755"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="updateConfigAppProperties" id="48ce8a29-df47-4a49-9624-d8fa29b9e1e7" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "txnPayload": {"configAppPropertiesDO":    {
+      "updatedByUser": "admin",
+      "updatedTs": "2018-05-20T17.56.24.844+0000",
+      "createdTs": "2018-05-20T17.56.24.844+0000",
+      "description": "test",
+      "value": "108",
+      "valueDefault": "108",
+      "key": "testproperty",
+      "idPk": "c2401f17-5c99-4262-81ee-bfb61b2c27c7",
+      "version": 0
+   }},
+   "txnHeader":    {
+      "txnMessageId": "00000000",
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "updateConfigAppPropertiesBase"
+   }
+}</con:request><con:originalUri>http://localhost/yugandhar-microservices-platform-jeec-1.0.0.RELEASE/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="44d06dc3-1725-4bff-a6ac-7baafd95b3c1" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="idTransfer1" id="cf600700-7991-43de-b1ea-a632f2b146d0"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>idPktransfer</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>updateConfigAppProperties</con:sourceStep><con:sourcePath>txnPayload.configAppPropertiesDO.idPk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>retrieveConfigAppPropertiesByBusinesskey</con:targetStep><con:targetPath>txnPayload.configAppPropertiesDO.idPk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="retrieveConfigAppPropertiesByBusinesskey" id="f2d6c4fa-1676-4da3-b5d2-ed7042fe2a24"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="retrieveConfigAppPropertiesByBusinesskey" id="862af9f8-4144-4569-befc-98d22d92ff80" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "txnHeader":    {
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "retrieveConfigAppPropertiesBase"
+   },
+   "txnPayload": {"configAppPropertiesDO": {"idPk": "c2401f17-5c99-4262-81ee-bfb61b2c27c7"}}
+}</con:request><con:originalUri>http://localhost/yugandhar-microservices-platform-jeec-1.0.0.RELEASE/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="dab217f5-02b5-4f9d-86c7-9d6b008f2b81" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="KeyTransfer" id="55cf844c-5b3f-4e97-8ad9-7ad25f912d69"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>keyTransfer</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>retrieveConfigAppPropertiesByBusinesskey</con:sourceStep><con:sourcePath>txnPayload.configAppPropertiesDO.key</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>findConfigAppPropertiesByBusinessKeyBase</con:targetStep><con:targetPath>txnPayload.configAppPropertiesDO.key</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="findConfigAppPropertiesByBusinessKeyBase" id="edc26ddf-9ee4-4774-abfa-67a010d54ed9"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="findConfigAppPropertiesByBusinessKeyBase" id="90f1c325-bf70-499b-89c8-be5ec12db837" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "txnHeader":    {
+      "txnMessageId": "e9ab3a15-c83c-44e3-98de-1b17534c8783",
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "findConfigAppPropertiesByBusinessKeyBase"
+   },
+   "txnPayload": {"configAppPropertiesDO": {"key": "testproperty"}}
+}</con:request><con:originalUri>http://localhost/yugandhar-microservices-platform-jeec-1.0.0.RELEASE/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="81f306ae-6d68-48a4-9bed-09b2a737b950" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="ab625759-d9df-48de-8430-1337d38d62eb" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ConfigTxnRegistry" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="createConfigTxnRegistryBase" id="c1d7124b-84bc-4ec4-8aea-8014f361632d"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="createConfigTxnRegistryBase" id="799f43dd-2dc0-447b-baef-56eb42e281c9" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{"txnHeader": {
+		"requesterLanguage": "1",
+		"userName": "admin",
+		"userRole": "admin",
+		"txnMessageId": "12312311115999",
+		"transactionServiceName": "createConfigTxnRegistryBase"
+	},
+	"txnPayload": {
+			 "configTxnRegistryDO":       {
+         "idPk": null,
+         "version": 0,
+         "txnserviceName": "TEMP",
+         "txnserviceClass": "TEMP",
+         "txnserviceClassmethod": "TEMP",
+         "description": "TEMP"
+      }
+		
+	}
+	
+}</con:request><con:originalUri>http://localhost/yugandhar-microservices-platform-jeec-1.0.0.RELEASE/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="f6f7c3a4-9063-4b55-98c0-501ce56207b8" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer1" id="e869c591-9085-4bcf-93f3-9fde98a004c4"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>idpk</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>createConfigTxnRegistryBase</con:sourceStep><con:sourcePath>txnPayload.configTxnRegistryDO.idPk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>updateConfigTxnRegistryBase</con:targetStep><con:targetPath>txnPayload.configTxnRegistryDO.idPk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>version</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>createConfigTxnRegistryBase</con:sourceStep><con:sourcePath>txnPayload.configTxnRegistryDO.version</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>updateConfigTxnRegistryBase</con:targetStep><con:targetPath>txnPayload.configTxnRegistryDO.version</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="updateConfigTxnRegistryBase" id="547638cc-98ce-452e-9777-b81b4c0db94a"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="updateConfigTxnRegistryBase" id="733bce39-3812-40dc-89e2-696495a45d64" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "txnHeader":    {
+      "txnMessageId": "12312311115999",
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "updateConfigTxnRegistryBase"
+   },
+   "txnPayload": {"configTxnRegistryDO":    {
+      "createdTs": "2018-05-21T08.54.09.408+0000",
+      "updatedTs": "2018-05-21T08.54.09.408+0000",
+      "description": "TEMP",
+      "txnserviceName": "TEMP",
+      "txnserviceClass": "TEMP",
+      "idPk": "89b01faa-99a6-4a3d-ac99-a4d4373c4430",
+      "txnserviceClassmethod": "TEMP",
+      "version": 0
+   }}
+}</con:request><con:originalUri>http://localhost/yugandhar-microservices-platform-jeec-1.0.0.RELEASE/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="64c7cf92-59eb-4f00-8eea-ba7dd2b6be27" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer2" id="6f34383c-10a5-4383-a0d7-6966ac12ff20"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>idpk</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>updateConfigTxnRegistryBase</con:sourceStep><con:sourcePath>txnPayload.configTxnRegistryDO.idPk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>retrieveConfigTxnRegistryBase</con:targetStep><con:targetPath>txnPayload.configTxnRegistryDO.idPk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="retrieveConfigTxnRegistryBase" id="2269faef-3d25-46b2-be7e-7e2a7653fbcf"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="retrieveConfigTxnRegistryBase" id="11b450eb-87ab-42ef-aaac-9a073cd9c8cb" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "txnPayload": {"configTxnRegistryDO": {"idPk": "89b01faa-99a6-4a3d-ac99-a4d4373c4430"}},
+   "txnHeader":    {
+      "txnMessageId": "12312311115999",
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "retrieveConfigTxnRegistryBase"
+   }
+}</con:request><con:originalUri>http://localhost/yugandhar-microservices-platform-jeec-1.0.0.RELEASE/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="a16ea832-db23-43ba-8c8c-0074281d470c" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer3" id="bb3c81fe-18e4-4241-a10f-16eb886a4304"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>txnserviceName</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>retrieveConfigTxnRegistryBase</con:sourceStep><con:sourcePath>txnPayload.configTxnRegistryDO.txnserviceName</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>findConfigTxnRegistryByBusinessKey</con:targetStep><con:targetPath>txnPayload.configTxnRegistryDO.txnserviceName</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="findConfigTxnRegistryByBusinessKey" id="1e44899f-5df5-41d8-a063-756ee33eca7e"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="findConfigTxnRegistryByBusinessKey" id="2355b2af-6c81-4068-b36f-300b89cb7d44" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "txnPayload": {"configTxnRegistryDO":    {
+      "txnserviceName": "TEMP",
+      "inquiryFilter": "ACTIVE"
+   }},
+   "txnHeader":    {
+      "txnMessageId": "12312311115999",
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "findConfigTxnRegistryByBusinessKeyBase"
+   }
+}</con:request><con:originalUri>http://localhost/yugandhar-microservices-platform-jeec-1.0.0.RELEASE/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="55770eb1-d5ad-46b0-8de8-8fb31bf8889d" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="e576a272-c954-4de5-889e-fe56452aa87a" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ConfigLanguageCode" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="createConfigLanguageCodeBase" id="b2412099-f88f-4af0-83a1-ea42b278afd3"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="createConfigLanguageCodeBase" id="dbf117eb-a14a-4e50-955c-bbe5ce709be2" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+	"txnHeader": {
+	 "requesterLanguage": "1",
+      "requesterLocale": null,
+      "userName": "admin",
+      "userRole": "admin",
+      "accessToken": null,
+      "txnCorrelationId": null,
+      "txnMessageId": "1234567890123",
+	  "transactionServiceName": "createConfigLanguageCodeBase"
+	},
+	"txnPayload": {
+			 "configLanguageCodeDO":        {
+			"key": "3",
+			"value": "FRENCH",
+			"description": "FRENCH"
+      }
+		
+	}
+	
+}</con:request><con:originalUri>http://localhost/YugandharBootProject-0.0.1-SNAPSHOT/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="031acccb-acd3-4db1-b74b-7ce83ca3b9aa" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer1" id="181a7002-9656-43f1-8533-227c0528cc10"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>idpk</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>createConfigLanguageCodeBase</con:sourceStep><con:sourcePath>txnPayload.configLanguageCodeDO.idPk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>updateConfigLanguageCodeBase</con:targetStep><con:targetPath>txnPayload.configLanguageCodeDO.idPk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>version</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>createConfigLanguageCodeBase</con:sourceStep><con:sourcePath>txnPayload.configLanguageCodeDO.version</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>updateConfigLanguageCodeBase</con:targetStep><con:targetPath>txnPayload.configLanguageCodeDO.version</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="updateConfigLanguageCodeBase" id="1c3db6ca-2370-4f5e-b5e5-ad42e1c74430"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="updateConfigLanguageCodeBase" id="1a44c983-4e62-41af-b03a-1159691ed8a4" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "responseCode": "SUCCESS",
+   "txnHeader":    {
+      "totalExecutionTimeMillies": "1538",
+      "txnMessageId": "1234567890123",
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "updateConfigLanguageCodeBase"
+   },
+   "txnPayload": {"configLanguageCodeDO":    {
+      "description": "French",
+      "value": "FRENCH",
+      "idPk": "ca1912ff-32e7-4d4c-832f-2ebe23f7c594",
+      "key": "3",
+      "version": 0
+   }}
+}</con:request><con:originalUri>http://localhost/YugandharBootProject-0.0.1-SNAPSHOT/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="ed015100-e906-474c-8f0e-464682c822a6" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer2" id="13ac8be8-6340-435e-9ea4-ecc1086a24e1"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>idpk</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>updateConfigLanguageCodeBase</con:sourceStep><con:sourcePath>txnPayload.configLanguageCodeDO.idPk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>retrieveConfigLanguageCodeBase</con:targetStep><con:targetPath>txnPayload.configLanguageCodeDO.idPk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="retrieveConfigLanguageCodeBase" id="2e0ddfd2-11fa-4006-90ef-8d86c33b66bb"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="retrieveConfigLanguageCodeBase" id="de0930cd-42f4-4d27-a6b5-05dc69e7d7ba" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "txnPayload": {"configLanguageCodeDO": {"idPk": "ca1912ff-32e7-4d4c-832f-2ebe23f7c594"}},
+   "txnHeader":    {
+      "totalExecutionTimeMillies": "1538",
+      "txnMessageId": "1234567890123",
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "retrieveConfigLanguageCodeBase"
+   }
+}</con:request><con:originalUri>http://localhost/YugandharBootProject-0.0.1-SNAPSHOT/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="97bec5c3-3e32-4aa0-8a25-702a3eb04aee" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer3" id="4704b8c8-1cc4-4649-b744-9779377e91c3"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>idpk</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>retrieveConfigLanguageCodeBase</con:sourceStep><con:sourcePath>txnPayload.configLanguageCodeDO.key</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>findConfigLanguageCodeByBusinessKeyBase</con:targetStep><con:targetPath>txnPayload.configLanguageCodeDO.key</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="findConfigLanguageCodeByBusinessKeyBase" id="87b4272e-d32a-4563-aaf4-75497114a3e2"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="findConfigLanguageCodeByBusinessKeyBase" id="a21516c8-bf7a-4689-9e48-7a23f536d014" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "txnHeader":    {
+      "totalExecutionTimeMillies": "1538",
+      "txnMessageId": "1234567890123",
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "findConfigLanguageCodeByBusinessKeyBase"
+   },
+   "txnPayload": {"configLanguageCodeDO":    {
+      "key": "3",
+      "inquiryFilter": "ALL"
+   }}
+}</con:request><con:originalUri>http://localhost/YugandharBootProject-0.0.1-SNAPSHOT/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="d733aacf-d7dc-418c-982c-6b402bfcfa1f" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="findAllConfigLanguageCodesBase" id="07b9b25b-cd94-446a-b6b1-229c85439d0b"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="findAllConfigLanguageCodesBase" id="546225a4-877a-42bf-b0d1-c4e4d3699980" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+	"txnHeader": {
+		"requesterLanguage": "1",
+      "requesterLocale": null,
+      "userName": "admin",
+      "userRole": "admin",
+      "accessToken": null,
+      "txnCorrelationId": null,
+      "txnMessageId": "1234567890123",
+      "requestOriginSource": null,
+      "requesterSystem": null,
+      "paginationStartIndex": null,
+      "paginationEndIndex": null,
+      "paginationTotalResultCount": null,
+		"transactionServiceName": "findAllConfigLanguageCodesBase"
+	},
+	"txnPayload": {
+			 "configLanguageCodeDO":       {
+		
+      }
+		
+	}
+	
+}</con:request><con:originalUri>http://localhost/YugandharBootProject-0.0.1-SNAPSHOT/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="285beab4-d078-417c-9a56-949133a8ea04" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="66666277-34e4-4339-9507-04f17a0d6b8c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="ConfigErrorcodeRegistry" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="createConfigErrorcodeRegistryBase" id="8ab3073c-7049-43ee-9668-a9b7198544c0"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="createConfigErrorcodeRegistryBase" id="ebcd9fe8-5aa9-4c86-b851-33f33e8b9bd8" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+	"txnHeader": {
+		"requesterLanguage": "1",
+		"userName": "admin",
+		"userRole": "admin",
+		"txnMessageId": "00000000",
+		"transactionServiceName": "createConfigErrorcodeRegistryBase"
+	},
+	"txnPayload": {
+			 "configErrorcodeRegistryDO":       {
+         "version": 0,
+         "configLanguageCodeKey": "1",
+         "errorCode": "1232",
+         "errorMessage": "test error",
+         "description": "batchEntityToProcessDO.batchActionStatusRefkey is invalid or Refkey-RefValue pair is invalid"
+      }
+		
+	}
+	
+}</con:request><con:originalUri>http://localhost/yugandhar-microservices-platform-jeec-1.0.0.RELEASE/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="c404b86e-4887-40a5-a01a-5d5937ad3de3" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer1" id="1e86686e-7f9e-4c81-83d6-11c4db7c86e8"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>idpk</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>createConfigErrorcodeRegistryBase</con:sourceStep><con:sourcePath>txnPayload.configErrorcodeRegistryDO.idPk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>updateConfigErrorcodeRegistryBase</con:targetStep><con:targetPath>txnPayload.configErrorcodeRegistryDO.idPk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>version</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>createConfigErrorcodeRegistryBase</con:sourceStep><con:sourcePath>txnPayload.configErrorcodeRegistryDO.version</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>updateConfigErrorcodeRegistryBase</con:targetStep><con:targetPath>txnPayload.configErrorcodeRegistryDO.version</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="updateConfigErrorcodeRegistryBase" id="ae41f8bc-c253-4780-9eb6-5d99350b16f0"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="updateConfigErrorcodeRegistryBase" id="bad0b9ed-2359-4198-8835-559951f8e391" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "txnHeader":    {
+      "txnMessageId": "12312311115999",
+      "requesterLanguage": "1",
+      "userName": "Rakesh9",
+      "userRole": "admin9",
+      "transactionServiceName": "updateConfigErrorcodeRegistryBase"
+   },
+   "txnPayload": {"configErrorcodeRegistryDO":    {
+      "errorMessage": "test error",
+      "updatedByUser": "admin",
+      "configLanguageCodeKey": "1",
+      "createdTs": "2018-05-21T10.58.40.314+0000",
+      "updatedTs": "2018-05-21T10.58.40.314+0000",
+      "description": "batchEntityToProcessDO.batchActionStatusRefkey is invalid or Refkey-RefValue pair is invalid",
+      "errorCode": "1232",
+      "idPk": "021564ed-e907-4305-b63e-1ddce6121783",
+      "version": 0,
+      "updatedByTxnId": "00000000"
+   }}
+}</con:request><con:originalUri>http://localhost/yugandhar-microservices-platform-jeec-1.0.0.RELEASE/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="adf3a436-b0f9-4be3-a926-fac53948d374" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer2" id="d0f23f6f-40d4-4ed4-b6f7-b283eae6f50d"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>idpk</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>updateConfigErrorcodeRegistryBase</con:sourceStep><con:sourcePath>txnPayload.configErrorcodeRegistryDO.idPk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>retrieveConfigErrorcodeRegistryBase</con:targetStep><con:targetPath>txnPayload.configErrorcodeRegistryDO.idPk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="retrieveConfigErrorcodeRegistryBase" id="4d69ed69-d38e-41bd-93cc-9163ee50de69"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="retrieveConfigErrorcodeRegistryBase" id="002873fa-a406-4711-8e40-f3e439e5157c" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "txnHeader":    {
+      "txnMessageId": "12312311115999",
+      "requesterLanguage": "1",
+      "userName": "Rakesh9",
+      "userRole": "admin9",
+      "transactionServiceName": "retrieveConfigErrorcodeRegistryBase"
+   },
+   "txnPayload": {"configErrorcodeRegistryDO": {"idPk": "021564ed-e907-4305-b63e-1ddce6121783"}}
+}</con:request><con:originalUri>http://localhost/yugandhar-microservices-platform-jeec-1.0.0.RELEASE/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="90d8e1bf-ea24-46c8-899c-a2f7babd904b" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer3" id="63582910-f8ac-471a-8007-e7f7d21c7934"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>errorcode</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>retrieveConfigErrorcodeRegistryBase</con:sourceStep><con:sourcePath>txnPayload.configErrorcodeRegistryDO.errorCode</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>findConfigErrorcodeRegistryByBusinessKeyBase</con:targetStep><con:targetPath>txnPayload.configErrorcodeRegistryDO.errorCode</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="findConfigErrorcodeRegistryByBusinessKeyBase" id="05f6670b-df22-4424-8ee4-5b1ccfe8b81b"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="findConfigErrorcodeRegistryByBusinessKeyBase" id="76e01d1f-cd06-4a95-a19d-87c71790875d" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "txnHeader":    {
+      "txnMessageId": "12312311115999",
+      "requesterLanguage": "1",
+      "userName": "Rakesh9",
+      "userRole": "admin9",
+      "transactionServiceName": "findConfigErrorcodeRegistryByBusinessKeyBase"
+   },
+   "txnPayload": {"configErrorcodeRegistryDO":    {
+      "langCodeRef": "1",
+      "errorCode": "1232"
+   }}
+}</con:request><con:originalUri>http://localhost/yugandhar-microservices-platform-jeec-1.0.0.RELEASE/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="9f135287-f18a-4df0-bf72-33982b4adf50" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="findAllConfigErrorcodeRegistryByLanguageCodeBase" id="7c10904f-8da2-4ba5-9d42-d373dd64605f"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="findAllConfigErrorcodeRegistryByLanguageCodeBase" id="0dfe7077-d164-493b-b78a-abfd620fb759" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{"txnHeader": {
+		"requesterLanguage": "1",
+		"userName": "Rakesh9",
+		"userRole": "admin9",
+		"txnMessageId": "12312311115999",
+		"transactionServiceName": "findAllConfigErrorcodeRegistryByLanguageCodeBase"
+	},
+	"txnPayload": {
+		
+			 "configErrorcodeRegistryDO":       {
+		"configLanguageCodeKey":"1",
+         "inquiryFilter": "ACTIVE"
+      }
+		
+	}
+	
+}</con:request><con:originalUri>http://localhost/yugandhar-microservices-platform-jeec-1.0.0.RELEASE/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="a4389d6d-873c-4dc3-8af6-84f345ddd1a1" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="84d77d80-1a1b-44b8-a94b-b6fb7ceff9b7" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="RefCountryIso" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="createRefCountryIsoBase" id="9a730bff-a320-48f1-8471-5dbc5dbf6ba8"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="createRefCountryIsoBase" id="388f2008-b16f-4cd0-bc1c-5c6bfdb28a11" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+	"txnHeader": {
+	 "requesterLanguage": "1",
+      "requesterLocale": null,
+      "userName": "admin",
+      "userRole": "admin",
+      "accessToken": null,
+      "txnCorrelationId": null,
+      "txnMessageId": "1234567890123",
+      "requestOriginSource": null,
+      "requesterSystem": null,
+	"transactionServiceName": "createRefCountryIsoBase"
+	},
+	"txnPayload": {
+			 "refCountryIsoDO":        {
+			"idPk": null,
+			"version": null,
+			"createdTs": null,
+			"deletedTs": null,
+			"updatedTs": null,
+			"updatedByUser": null,
+			"updatedByTxnId": null,
+			"configLanguageCodeKey": "1",
+			"key": "TEST",
+			"value": "TEST",
+			"description": null
+      }}
+	
+}
+</con:request><con:originalUri>http://localhost/yugandhar-microservices-platform-jeec-1.0.0.RELEASE/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="0f35db8b-ac51-4910-b7e1-5c4e94cc3e98" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer1" id="27c2cfb6-d3b2-4439-8cca-186a1791485d"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>idpk</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>createRefCountryIsoBase</con:sourceStep><con:sourcePath>txnPayload.refCountryIsoDO.idPk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>updateRefCountryIsoBase</con:targetStep><con:targetPath>txnPayload.refCountryIsoDO.idPk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="updateRefCountryIsoBase" id="73ba40eb-a046-4177-8135-f7a16b108865"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="updateRefCountryIsoBase" id="7a7f90c0-0450-47a3-8471-ecd577b0dade" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "responseCode": "SUCCESS",
+   "txnHeader":    {
+      "txnMessageId": "1234567890123",
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "updateRefCountryIsoBase"
+   },
+   "txnPayload": {"refCountryIsoDO":    {
+      "configLanguageCodeKey": "1",
+      "value": "TEST",
+      "idPk": "67f4404e-f765-46f4-a2e6-d99d059eb8f7",
+      "key": "TEST",
+      "version": 0
+   }}
+}</con:request><con:originalUri>http://localhost/yugandhar-microservices-platform-jeec-1.0.0.RELEASE/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="9cfb33bb-7a42-468c-802b-468de8d80532" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer2" id="050f660a-c7fd-41aa-aee3-cbd9ee274f86"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>idpk</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>updateRefCountryIsoBase</con:sourceStep><con:sourcePath>txnPayload.refCountryIsoDO.idPk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>retrieveRefCountryIsoBase</con:targetStep><con:targetPath>txnPayload.refCountryIsoDO.idPk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="retrieveRefCountryIsoBase" id="6f94a6bb-0e87-49ca-a159-3fe5571c7dce"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="retrieveRefCountryIsoBase" id="5378a817-76f8-497f-af01-554ff0c6dc80" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "responseCode": "SUCCESS",
+   "txnHeader":    {
+      "txnMessageId": "1234567890123",
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "retrieveRefCountryIsoBase"
+   },
+   "txnPayload": {"refCountryIsoDO": {"idPk": "67f4404e-f765-46f4-a2e6-d99d059eb8f7"}}
+}</con:request><con:originalUri>http://localhost/yugandhar-microservices-platform-jeec-1.0.0.RELEASE/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="5ac65157-c890-47d1-b1c2-004e8ee844be" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer3" id="1a71eedd-08c8-4aa3-9ad8-23d2fa07a4a6"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>key</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>retrieveRefCountryIsoBase</con:sourceStep><con:sourcePath>txnPayload.refCountryIsoDO.key</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>findRefCountryIsoByBusinessKeyBase</con:targetStep><con:targetPath>txnPayload.refCountryIsoDO.key</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="findRefCountryIsoByBusinessKeyBase" id="772478cb-7a77-49e8-a1f8-97d8ef8b45cb"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="findRefCountryIsoByBusinessKeyBase" id="79bbf862-d74d-41f7-886c-a0f4ba8f54b6" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "txnHeader":    {
+      "txnMessageId": "1234567890123",
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "findRefCountryIsoByBusinessKeyBase"
+   },
+   "txnPayload": {"refCountryIsoDO":    {
+      "configLanguageCodeKey": "1",
+      "key": "TEST"
+   }}
+}</con:request><con:originalUri>http://localhost/yugandhar-microservices-platform-jeec-1.0.0.RELEASE/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="254e133a-b75f-49a3-989d-5231c984e372" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="findAllRefCountryIsoByLanguageCodeBase" id="536869fd-0c36-4f49-8745-1116da863e8a"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="findAllRefCountryIsoByLanguageCodeBase" id="260b1848-fbef-4063-86bc-1a1ce202c2f3" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{"txnHeader": {
+		"requesterLanguage": "1",
+		"userName": "admin",
+		"userRole": "admin",
+		"txnMessageId": "12312311115999",
+		"transactionServiceName": "findAllRefCountryIsoByLanguageCodeBase"
+	},
+	"txnPayload": {
+		"paginationIndexOfCurrentSlice": 2,
+		"paginationPageSize": 25, 
+			"refCountryIsoDO":        {
+		"configLanguageCodeKey": "1"
+      }
+		
+	}
+	
+}</con:request><con:originalUri>http://localhost/yugandhar-microservices-platform-jeec-1.0.0.RELEASE/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="145e0983-ee12-40f5-8b58-5eb6f5a852eb" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="bf171055-aea4-4a47-916b-7a38a57adfc7" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="RefCurrency" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="createRefCurrencyBase" id="8f6b3a2a-ca57-43b8-8c8e-88bf2bba8932"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="createRefCurrencyBase" id="388f2008-b16f-4cd0-bc1c-5c6bfdb28a11" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+	"txnHeader": {
+	 "requesterLanguage": "1",
+      "requesterLocale": null,
+      "userName": "admin",
+      "userRole": "admin",
+      "accessToken": null,
+      "txnCorrelationId": null,
+      "txnMessageId": "1234567890123",
+      "requestOriginSource": null,
+      "requesterSystem": null,
+	"transactionServiceName": "createRefCurrencyBase"
+	},
+	"txnPayload": {
+			 "refCurrencyDO":        {
+			"idPk": null,
+			"version": null,
+			"createdTs": null,
+			"deletedTs": null,
+			"updatedTs": null,
+			"updatedByUser": null,
+			"updatedByTxnId": null,
+			"configLanguageCodeKey": "1",
+			"key": "TEST",
+			"value": "TEST",
+			"description": null
+      }}
+	
+}
+</con:request><con:originalUri>http://localhost/yugandhar-microservices-platform-jeec-1.0.0.RELEASE/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="3942cd78-9b01-42ca-b8e9-abbed78a1dca" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer1" id="324228a7-4a2e-444a-aab9-02dd98593c1c"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>idpk</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>createRefCurrencyBase</con:sourceStep><con:sourcePath>txnPayload.refCurrencyDO.idPk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>updateRefCurrencyBase</con:targetStep><con:targetPath>txnPayload.refCurrencyDO.idPk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>version</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>createRefCurrencyBase</con:sourceStep><con:sourcePath>txnPayload.refCurrencyDO.version</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>updateRefCurrencyBase</con:targetStep><con:targetPath>txnPayload.refCurrencyDO.version</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="updateRefCurrencyBase" id="0548473f-ffeb-41c5-a51d-42086f52c4e8"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="updateRefCurrencyBase" id="7a7f90c0-0450-47a3-8471-ecd577b0dade" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "txnHeader":    {
+      "txnMessageId": "1234567890123",
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "updateRefCurrencyBase"
+   },
+   "txnPayload": {"refCurrencyDO":    {
+      "configLanguageCodeKey": "1",
+      "value": "TEST",
+      "idPk": "c0cdda68-bdb7-4ad8-a3fb-2ad92adeb791",
+      "key": "TEST",
+      "version": 0
+   }}
+}</con:request><con:originalUri>http://localhost/yugandhar-microservices-platform-jeec-1.0.0.RELEASE/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="034f510b-8848-4325-8d38-1f9d7eb8f792" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer2" id="6b2c503b-49df-445c-9421-d08cf67882fc"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>idpk</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>updateRefCurrencyBase</con:sourceStep><con:sourcePath>txnPayload.refCurrencyDO.idPk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>retrieveRefCurrencyBase</con:targetStep><con:targetPath>txnPayload.refCurrencyDO.idPk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="retrieveRefCurrencyBase" id="be1e9e92-64b8-4ec7-aade-70854aa18ab8"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="retrieveRefCurrencyBase" id="5378a817-76f8-497f-af01-554ff0c6dc80" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "txnHeader":    {
+      "txnMessageId": "1234567890123",
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "retrieveRefCurrencyBase"
+   },
+   "txnPayload": {"refCurrencyDO": {"idPk": "c0cdda68-bdb7-4ad8-a3fb-2ad92adeb791"}}
+}</con:request><con:originalUri>http://localhost/yugandhar-microservices-platform-jeec-1.0.0.RELEASE/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="3461842b-5d57-4804-838d-30e67e683180" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer3" id="7cdc0211-c55c-429e-9fb1-548f20b53dd1"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>key</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>retrieveRefCurrencyBase</con:sourceStep><con:sourcePath>txnPayload.refCurrencyDO.key</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>findRefCurrencyByBusinessKeyBase</con:targetStep><con:targetPath>txnPayload.refCurrencyDO.key</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="findRefCurrencyByBusinessKeyBase" id="89683eeb-f19a-4f6e-aba5-0742dbb459d2"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="findRefCurrencyByBusinessKeyBase" id="79bbf862-d74d-41f7-886c-a0f4ba8f54b6" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "txnHeader":    {
+      "txnMessageId": "1234567890123",
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "findRefCurrencyByBusinessKeyBase"
+   },
+   "txnPayload": {"refCurrencyDO":    {
+      "configLanguageCodeKey": "1",
+      "key": "TEST"
+   }}
+}</con:request><con:originalUri>http://localhost/yugandhar-microservices-platform-jeec-1.0.0.RELEASE/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="13fff5ca-4afb-4187-8b5c-090023fb4400" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="findAllRefCurrencyByLanguageCodeBase" id="4727299b-bec8-4471-ad9f-10f610db7732"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="findAllRefCurrencyByLanguageCodeBase" id="260b1848-fbef-4063-86bc-1a1ce202c2f3" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{"txnHeader": {
+		"requesterLanguage": "1",
+		"userName": "admin",
+		"userRole": "admin",
+		"txnMessageId": "12312311115999",
+		"transactionServiceName": "findAllRefCurrencyByLanguageCodeBase"
+	},
+	"txnPayload": {
+		"paginationIndexOfCurrentSlice": 1,
+		"paginationPageSize": 25, 
+			"refCurrencyDO":        {
+		"configLanguageCodeKey": "1"
+      }
+		
+	}
+	
+}</con:request><con:originalUri>http://localhost/yugandhar-microservices-platform-jeec-1.0.0.RELEASE/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="d1b99d66-af65-44f7-9fa8-23fe48d07e08" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="00e9a6c2-f940-4251-aaa6-70a56871269b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="RefLanguageCode" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="createRefLanguageCodeBase" id="8aa9ac98-ba4c-4bc7-b369-5f1ce0f2ee7c"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="createRefLanguageCodeBase" id="388f2008-b16f-4cd0-bc1c-5c6bfdb28a11" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+	"txnHeader": {
+	 "requesterLanguage": "1",
+      "requesterLocale": null,
+      "userName": "admin",
+      "userRole": "admin",
+      "accessToken": null,
+      "txnCorrelationId": null,
+      "txnMessageId": "1234567890123",
+      "requestOriginSource": null,
+      "requesterSystem": null,
+	"transactionServiceName": "createRefLanguageCodeBase"
+	},
+	"txnPayload": {
+			 "refLanguageCodeDO":        {
+			"idPk": null,
+			"version": null,
+			"createdTs": null,
+			"deletedTs": null,
+			"updatedTs": null,
+			"updatedByUser": null,
+			"updatedByTxnId": null,
+			"configLanguageCodeKey": "1",
+			"key": "TEST",
+			"value": "TEST",
+			"description": null
+      }}
+	
+}
+</con:request><con:originalUri>http://localhost/yugandhar-microservices-platform-jeec-1.0.0.RELEASE/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="1acfcc8c-d04e-4c44-aeb4-dd3e0c20768b" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer1" id="930766a1-cfe6-4471-a45d-3f461a092656"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>idpk</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>createRefLanguageCodeBase</con:sourceStep><con:sourcePath>txnPayload.refLanguageCodeDO.idPk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>updateRefLanguageCodeBase</con:targetStep><con:targetPath>txnPayload.refLanguageCodeDO.idPk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="updateRefLanguageCodeBase" id="755d5955-e794-4408-9cba-f48af4ae1aca"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="updateRefLanguageCodeBase" id="7a7f90c0-0450-47a3-8471-ecd577b0dade" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "txnHeader":    {
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "updateRefLanguageCodeBase"
+   },
+   "txnPayload": {"refLanguageCodeDO":    {
+      "updatedByUser": "admin",
+      "configLanguageCodeKey": "1",
+      "createdTs": "2018-05-21T09.55.34.184+0000",
+      "updatedTs": "2018-05-21T09.55.34.184+0000",
+      "value": "TEST",
+      "idPk": "f22b7016-518d-40d5-ab69-ef22048ec68c",
+      "key": "TEST",
+      "version": 0,
+      "updatedByTxnId": "1234567890123"
+   }}
+}</con:request><con:originalUri>http://localhost/yugandhar-microservices-platform-jeec-1.0.0.RELEASE/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="a4295dd8-d526-4beb-8ce7-9664222606d6" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer2" id="dbc5b377-122f-42d3-9fec-e12cce06501d"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>idpk</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>updateRefLanguageCodeBase</con:sourceStep><con:sourcePath>txnPayload.refLanguageCodeDO.idPk</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>retrieveRefLanguageCodeBase</con:targetStep><con:targetPath>txnPayload.refLanguageCodeDO.idPk</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="retrieveRefLanguageCodeBase" id="2b155fed-1a28-45c2-84fd-272d2df99613"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="retrieveRefLanguageCodeBase" id="5378a817-76f8-497f-af01-554ff0c6dc80" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "txnHeader":    {
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "retrieveRefLanguageCodeBase"
+   },
+   "txnPayload": {"refLanguageCodeDO": {"idPk": "f22b7016-518d-40d5-ab69-ef22048ec68c"}}
+}</con:request><con:originalUri>http://localhost/yugandhar-microservices-platform-jeec-1.0.0.RELEASE/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="e5d6bd3a-9f27-4566-ba3f-45119695110f" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer3" id="dc1aad6b-e573-4951-aaf0-2c6003b2e18f"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>key</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>retrieveRefLanguageCodeBase</con:sourceStep><con:sourcePath>txnPayload.refLanguageCodeDO.key</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>findRefLanguageCodeByBusinessKeyBase</con:targetStep><con:targetPath>txnPayload.refLanguageCodeDO.key</con:targetPath><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="findRefLanguageCodeByBusinessKeyBase" id="88451764-ed5f-4bd8-8c4c-69a6a40b40e1"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="findRefLanguageCodeByBusinessKeyBase" id="79bbf862-d74d-41f7-886c-a0f4ba8f54b6" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{
+   "txnHeader":    {
+      "txnMessageId": "1234567890123",
+      "requesterLanguage": "1",
+      "userName": "admin",
+      "userRole": "admin",
+      "transactionServiceName": "findRefLanguageCodeByBusinessKeyBase"
+   },
+   "txnPayload": {"refLanguageCodeDO":    {
+      "configLanguageCodeKey": "1",
+      "key": "TEST"
+   }}
+}</con:request><con:originalUri>http://localhost/yugandhar-microservices-platform-jeec-1.0.0.RELEASE/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="a5d33ff4-c143-4cd4-bdde-10305245685b" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="findAllRefLanguageCodeByLanguageCodeBase" id="26a5ac2d-fa3b-4567-b329-a38b3f8d0c93"><con:settings/><con:config service="http://localhost:8091" methodName="YugandharRequestProcessor" resourcePath="/rest/YugandharRequestProcessor" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="findAllRefLanguageCodeByLanguageCodeBase" id="260b1848-fbef-4063-86bc-1a1ce202c2f3" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8091</con:endpoint><con:request>{"txnHeader": {
+		"requesterLanguage": "1",
+		"userName": "admin",
+		"userRole": "admin",
+		"txnMessageId": "12312311115999",
+		"transactionServiceName": "findAllRefLanguageCodeByLanguageCodeBase"
+	},
+	"txnPayload": {
+		"paginationIndexOfCurrentSlice": 0,
+		"paginationPageSize": 25, 
+			"refLanguageCodeDO":        {
+		"configLanguageCodeKey": "1"
+      }
+		
+	}
+	
+}</con:request><con:originalUri>http://localhost/yugandhar-microservices-platform-jeec-1.0.0.RELEASE/rest/YugandharRequestProcessor</con:originalUri><con:assertion type="GroovyScriptAssertion" id="005cffb7-d953-464c-8b63-f85dcd3e0484" name="Script Assertion"><con:configuration><scriptText>import groovy.json. JsonSlurper
+def slurper = new JsonSlurper()
+
+def request = messageExchange.requestContent
+def response = messageExchange.response.responseContent
+def jsonReq = slurper.parseText(request)
+def jsonRes = slurper.parseText(response)
+
+log.info jsonRes.responseCode
+assert jsonRes.responseCode == "SUCCESS"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
