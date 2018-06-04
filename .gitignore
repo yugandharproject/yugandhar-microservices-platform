@@ -2,3 +2,8 @@
 RemoteSystemsTempFiles
 .project
 /resources/SOAPUIResults
+/yugandhar-msp-codegenerator/lib/mariadb-java-client-2.2.3.jar
+/yugandhar-msp-codegenerator/lib/ojdbc7.jar
+/yugandhar-microservices-platform-ews/lib/ojdbc7.jar
+/yugandhar-microservices-platform-ews/lib
+/yugandhar-microservices-platform-jeec/lib/ojdbc7.jar
