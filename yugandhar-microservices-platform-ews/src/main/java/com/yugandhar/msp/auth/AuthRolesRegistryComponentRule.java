@@ -24,7 +24,7 @@ public class AuthRolesRegistryComponentRule {
 	*Pre execute persist validation method for AuthRolesRegistryComp to validate mandatory attributes etc
 	* This method is modularized in respective rule class
 	* Use Aspect Oriented Programming (AOP) based Yugandhar Rule to override / extend the default OOTB validation
-	*@throws YugandharCommonException 
+*@throws YugandharCommonException yugandhar common exception 
 	*/
 	public void prevalidateAuthRolesRegistryCompPersit(TxnTransferObj txnTransferObj) {
 		// TODO Auto-generated method stub
@@ -34,7 +34,7 @@ public class AuthRolesRegistryComponentRule {
 	*Pre execute merge validation method for AuthRolesRegistryComp to validate mandatory attributes etc
 	* This method is modularized in respective rule class
 	* Use Aspect Oriented Programming (AOP) based Yugandhar Rule to override / extend the default OOTB validation
-	*@throws YugandharCommonException 
+*@throws YugandharCommonException yugandhar common exception 
 	*/
 	public void PrevalidateAuthRolesRegistryCompMerge(TxnTransferObj txnTransferObj) {
 		// TODO Auto-generated method stub
@@ -44,7 +44,7 @@ public class AuthRolesRegistryComponentRule {
 	*Pre execute findbyId validation method for AuthRolesRegistryComp to validate mandatory attributes etc
 	* This method is modularized in respective rule class
 	* Use Aspect Oriented Programming (AOP) based Yugandhar Rule to override / extend the default OOTB validation
-	*@throws YugandharCommonException 
+*@throws YugandharCommonException yugandhar common exception 
 	*/
 	public void prevalidateAuthRolesRegistryCompFindById(TxnTransferObj txnTransferObj) {
 		// TODO Auto-generated method stub
@@ -55,7 +55,7 @@ public class AuthRolesRegistryComponentRule {
 	*Pre execute findByBusinessKey validation method for AuthRolesRegistryComp to validate mandatory attributes etc
 	* This method is modularized in respective rule class
 	* Use Aspect Oriented Programming (AOP) based Yugandhar Rule to override / extend the default OOTB validation
-	*@throws YugandharCommonException 
+*@throws YugandharCommonException yugandhar common exception 
 	*/
 	public void preValidateAuthRolesRegistryfindByBusinessKey(TxnTransferObj txnTransferObj) {
 		// TODO Auto-generated method stub
@@ -66,7 +66,7 @@ public class AuthRolesRegistryComponentRule {
 	*Pre execute rule for persist in AuthRolesRegistryComp
 	* This method is modularized in respective rule class
 	* Use Aspect Oriented Programming (AOP) based Yugandhar Rule to override / extend the default OOTB validation
-	*@throws YugandharCommonException 
+*@throws YugandharCommonException yugandhar common exception 
 	*/
 	public void preExecuteAuthRolesRegistryCompPersist(AuthRolesRegistryDO reqAuthRolesRegistryDO,
 			TxnTransferObj txnTransferObj) {
@@ -78,7 +78,7 @@ public class AuthRolesRegistryComponentRule {
 	*Pre execute rule for persist in AuthRolesRegistryComp
 	* This method is modularized in respective rule class
 	* Use Aspect Oriented Programming (AOP) based Yugandhar Rule to override / extend the default OOTB validation
-	*@throws YugandharCommonException 
+*@throws YugandharCommonException yugandhar common exception 
 	*/
 	public void postExecuteAuthRolesRegistryCompPersit(TxnTransferObj txnTransferObj) {
 		// TODO Auto-generated method stub
@@ -89,7 +89,7 @@ public class AuthRolesRegistryComponentRule {
 	*Pre execute rule for merge in AuthRolesRegistryComp
 	* This method is modularized in respective rule class
 	* Use Aspect Oriented Programming (AOP) based Yugandhar Rule to override / extend the default OOTB validation
-	*@throws YugandharCommonException 
+*@throws YugandharCommonException yugandhar common exception 
 	*/
 	public void preExecuteAuthRolesRegistryCompMerge(AuthRolesRegistryDO reqAuthRolesRegistryDO,
 			AuthRolesRegistryDO dbimageAuthRolesRegistryDO, TxnTransferObj txnTransferObj) {
@@ -101,7 +101,7 @@ public class AuthRolesRegistryComponentRule {
 	*Pre execute rule for merge in AuthRolesRegistryComp
 	* This method is modularized in respective rule class
 	* Use Aspect Oriented Programming (AOP) based Yugandhar Rule to override / extend the default OOTB validation
-	*@throws YugandharCommonException 
+*@throws YugandharCommonException yugandhar common exception 
 	*/
 	public void postExecuteAuthRolesRegistryCompMerge(TxnTransferObj txnTransferObj) {
 		// TODO Auto-generated method stub
@@ -112,7 +112,7 @@ public class AuthRolesRegistryComponentRule {
 	*Pre execute rule for findbyId in AuthRolesRegistryComp 
 	* This method is modularized in respective rule class
 	* Use Aspect Oriented Programming (AOP) based Yugandhar Rule to override / extend the default OOTB validation
-	*@throws YugandharCommonException 
+*@throws YugandharCommonException yugandhar common exception 
 	*/
 	public void postExecuteAuthRolesRegistryCompFindById(TxnTransferObj txnTransferObj) {
 		// TODO Auto-generated method stub
@@ -123,7 +123,7 @@ public class AuthRolesRegistryComponentRule {
 	*Pre execute rule for findByBusinessKey in AuthRolesRegistryComp 
 	* This method is modularized in respective rule class
 	* Use Aspect Oriented Programming (AOP) based Yugandhar Rule to override / extend the default OOTB validation
-	*@throws YugandharCommonException 
+*@throws YugandharCommonException yugandhar common exception 
 	*/
 	public void preExecuteAuthRolesRegistryfindByBusinessKey(TxnTransferObj txnTransferObj) {
 		// TODO Auto-generated method stub
@@ -134,7 +134,7 @@ public class AuthRolesRegistryComponentRule {
 	*Pre execute rule for findByBusinessKey in AuthRolesRegistryComp 
 	* This method is modularized in respective rule class
 	* Use Aspect Oriented Programming (AOP) based Yugandhar Rule to override / extend the default OOTB validation
-	*@throws YugandharCommonException 
+*@throws YugandharCommonException yugandhar common exception 
 	*/
 	public void postExecuteAuthRolesRegistryfindByBusinessKey(TxnTransferObj txnTransferObj) {
 		// TODO Auto-generated method stub

@@ -29,7 +29,7 @@ import com.yugandhar.msp.keygen.YugandharKeygenerator;
 *@author Yugandhar
 *@version 1.0
 *@since 1.0
-*@see Documentation
+*
 */
 <#assign classbody>
 
@@ -65,7 +65,7 @@ public class ${pojo.getDeclarationName()}Component {
 	*@since 1.0
 	*@param  txnTransferObj  Transfer Object TxnTransferObj instance
 	*@return  txnTransferObj Returns the Transfer Object TxnTransferObj instance populated with persisted instance 
-	*@throws YugandharCommonException if ${pojo.getDeclarationName()}DO object is not present in the request or other mandatory attributes not present
+	*@throws YugandharCommonException yugandhar common exception if ${pojo.getDeclarationName()}DO object is not present in the request or other mandatory attributes not present
 	*
 	*/
 	
@@ -129,7 +129,7 @@ public class ${pojo.getDeclarationName()}Component {
 	*@since 1.0
 	*@param  txnTransferObj  Transfer Object TxnTransferObj instance
 	*@return  txnTransferObj Returns the Transfer Object TxnTransferObj instance populated with database instance 
-	*@throws YugandharCommonException if ${pojo.getDeclarationName()}DO object is not present in the request or mandatory attributes primary key is not present
+	*@throws YugandharCommonException yugandhar common exception if ${pojo.getDeclarationName()}DO object is not present in the request or mandatory attributes primary key is not present
 	*/
 
 	public TxnTransferObj merge(TxnTransferObj txnTransferObj) {
@@ -191,7 +191,7 @@ public class ${pojo.getDeclarationName()}Component {
 	*@since 1.0
 	*@param  txnTransferObj  Transfer Object TxnTransferObj instance
 	*@return  txnTransferObj Returns the Transfer Object TxnTransferObj instance populated with database instance 
-	*@throws YugandharCommonException if ${pojo.getDeclarationName()}DO object is not present in the request or mandatory attributes primary key is not present
+	*@throws YugandharCommonException yugandhar common exception if ${pojo.getDeclarationName()}DO object is not present in the request or mandatory attributes primary key is not present
 	*/
 	public TxnTransferObj findById(TxnTransferObj txnTransferObj) {
 		respTxnTransferObj = new TxnTransferObj();
@@ -230,7 +230,7 @@ public class ${pojo.getDeclarationName()}Component {
 	*@since 1.0
 	*@param  txnTransferObj  Transfer Object TxnTransferObj instance
 	*@return  txnTransferObj Returns the Transfer Object TxnTransferObj instance populated with database instance 
-	*@throws YugandharCommonException if ${pojo.getDeclarationName()}DO object is not present in the request or mandatory attributes business key is not present
+	*@throws YugandharCommonException yugandhar common exception if ${pojo.getDeclarationName()}DO object is not present in the request or mandatory attributes business key is not present
 	*/
 	private void performCommonvalidationBeforePersist(TxnTransferObj txnTransferObj) {
 		commonValidationUtil.validateHeaderForInternalTxn(txnTransferObj);
@@ -252,7 +252,7 @@ public class ${pojo.getDeclarationName()}Component {
 	*@since 1.0
 	*@param  txnTransferObj  Transfer Object TxnTransferObj instance
 	*@return  txnTransferObj Returns the Transfer Object TxnTransferObj instance populated with database instance 
-	*@throws YugandharCommonException if ${pojo.getDeclarationName()}DO object is not present in the request or mandatory attributes business key is not present
+	*@throws YugandharCommonException yugandhar common exception if ${pojo.getDeclarationName()}DO object is not present in the request or mandatory attributes business key is not present
 	*/
 	private void performCommonvalidationBeforeMerge(TxnTransferObj txnTransferObj) {
 		commonValidationUtil.validateHeaderForInternalTxn(txnTransferObj);
@@ -280,7 +280,7 @@ public class ${pojo.getDeclarationName()}Component {
 	*@since 1.0
 	*@param  txnTransferObj  Transfer Object TxnTransferObj instance
 	*@return  txnTransferObj Returns the Transfer Object TxnTransferObj instance populated with database instance 
-	*@throws YugandharCommonException if ${pojo.getDeclarationName()}DO object is not present in the request or mandatory attributes business key is not present
+	*@throws YugandharCommonException yugandhar common exception if ${pojo.getDeclarationName()}DO object is not present in the request or mandatory attributes business key is not present
 	*/
 		private void performCommonvalidationBeforeFindById(TxnTransferObj txnTransferObj) {
 		

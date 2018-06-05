@@ -30,7 +30,7 @@ import com.yugandhar.msp.keygen.YugandharKeygenerator;
 *@author Yugandhar
 *@version 1.0
 *@since 1.0
-*@see Documentation
+*
 */
 
 @Component
@@ -68,7 +68,7 @@ public class ConfigTxnRegistryComponent {
 	*@since 1.0
 	*@param  txnTransferObj  Transfer Object TxnTransferObj instance
 	*@return  txnTransferObj Returns the Transfer Object TxnTransferObj instance populated with persisted instance 
-	*@throws YugandharCommonException if ConfigTxnRegistryDO object is not present in the request or other mandatory attributes not present
+*@throws YugandharCommonException yugandhar common exception if ConfigTxnRegistryDO object is not present in the request or other mandatory attributes not present
 	*
 	*/
 	public TxnTransferObj persist(TxnTransferObj txnTransferObj) throws YugandharCommonException {
@@ -115,7 +115,7 @@ public class ConfigTxnRegistryComponent {
 	*@since 1.0
 	*@param  txnTransferObj  Transfer Object TxnTransferObj instance
 	*@return  txnTransferObj Returns the Transfer Object TxnTransferObj instance populated with database instance 
-	*@throws YugandharCommonException if ConfigTxnRegistryDO object is not present in the request or mandatory attributes primary key is not present
+*@throws YugandharCommonException yugandhar common exception if ConfigTxnRegistryDO object is not present in the request or mandatory attributes primary key is not present
 	*/
 
 	public TxnTransferObj merge(TxnTransferObj txnTransferObj) {
@@ -164,7 +164,7 @@ public class ConfigTxnRegistryComponent {
 	*@since 1.0
 	*@param  txnTransferObj  Transfer Object TxnTransferObj instance
 	*@return  txnTransferObj Returns the Transfer Object TxnTransferObj instance populated with database instance 
-	*@throws YugandharCommonException if ConfigTxnRegistryDO object is not present in the request or mandatory attributes primary key is not present
+*@throws YugandharCommonException yugandhar common exception if ConfigTxnRegistryDO object is not present in the request or mandatory attributes primary key is not present
 	*/
 	public TxnTransferObj findById(TxnTransferObj txnTransferObj) {
 		logger.debug("findById method start");
@@ -203,7 +203,7 @@ public class ConfigTxnRegistryComponent {
 	*@since 1.0
 	*@param  txnTransferObj  Transfer Object TxnTransferObj instance
 	*@return  txnTransferObj Returns the Transfer Object TxnTransferObj instance populated with database instance 
-	*@throws YugandharCommonException if ConfigTxnRegistryDO object is not present in the request or mandatory attributes business key is not present
+*@throws YugandharCommonException yugandhar common exception if ConfigTxnRegistryDO object is not present in the request or mandatory attributes business key is not present
 	*/
 	private void performCommonvalidationBeforePersist(TxnTransferObj txnTransferObj) {
 
@@ -239,7 +239,7 @@ public class ConfigTxnRegistryComponent {
 	*@since 1.0
 	*@param  txnTransferObj  Transfer Object TxnTransferObj instance
 	*@return  txnTransferObj Returns the Transfer Object TxnTransferObj instance populated with database instance 
-	*@throws YugandharCommonException if ConfigTxnRegistryDO object is not present in the request or mandatory attributes business key is not present
+*@throws YugandharCommonException yugandhar common exception if ConfigTxnRegistryDO object is not present in the request or mandatory attributes business key is not present
 	*/
 	private void performCommonvalidationBeforeMerge(TxnTransferObj txnTransferObj) {
 		if (null == txnTransferObj.getTxnPayload().getConfigTxnRegistryDO()) {
@@ -274,7 +274,7 @@ public class ConfigTxnRegistryComponent {
 	*@since 1.0
 	*@param  txnTransferObj  Transfer Object TxnTransferObj instance
 	*@return  txnTransferObj Returns the Transfer Object TxnTransferObj instance populated with database instance 
-	*@throws YugandharCommonException if ConfigTxnRegistryDO object is not present in the request or mandatory attributes business key is not present
+*@throws YugandharCommonException yugandhar common exception if ConfigTxnRegistryDO object is not present in the request or mandatory attributes business key is not present
 	*/
 
 	@Transactional
@@ -328,12 +328,8 @@ public class ConfigTxnRegistryComponent {
 	 * Execute the query using JPA Repository
 	 * 
 	 * @since 1.0
-	 * @param String
-	 *            txnserviceName
-	 * @param String
-	 *            key
-	 * @param String
-	 *            filter
+	 * @param txnserviceName  transaction service name
+	 * @param filter Filter can be of type ACTIVE, INACTIVE or ALL
 	 * @return ConfigTxnRegistryDO returns the populated ConfigTxnRegistryDO object
 	 */
 	@CacheResult(cacheName = "CONFIGTXNREGISTRY_BUSKEY")

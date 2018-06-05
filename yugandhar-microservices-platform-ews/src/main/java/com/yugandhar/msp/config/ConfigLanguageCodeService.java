@@ -17,7 +17,7 @@ import com.yugandhar.common.exception.YugandharCommonException;
 *@author Yugandhar
 *@version 1.0
 *@since 1.0
-*@see Documentation
+*
 */
 @Scope(value = "prototype")
 @Service("com.yugandhar.msp.config.ConfigLanguageCodeService")
@@ -42,7 +42,7 @@ public class ConfigLanguageCodeService {
 	*@since 1.0
 	*@param  txnTransferObj  Transfer Object TxnTransferObj instance
 	*@return  txnTransferObj Returns the Transfer Object TxnTransferObj instance populated with persisted instance 
-	*@throws YugandharCommonException if ConfigLanguageCodeDO object is not present in the request or other mandatory attributes not present
+*@throws YugandharCommonException yugandhar common exception if ConfigLanguageCodeDO object is not present in the request or other mandatory attributes not present
 	*
 	*/
 	@Transactional
@@ -69,7 +69,7 @@ public class ConfigLanguageCodeService {
 	*@since 1.0
 	*@param  txnTransferObj  Transfer Object TxnTransferObj instance
 	*@return  txnTransferObj Returns the Transfer Object TxnTransferObj instance populated with database instance 
-	*@throws YugandharCommonException if ConfigLanguageCodeDO object is not present in the request or mandatory attributes primary key is not present
+*@throws YugandharCommonException yugandhar common exception if ConfigLanguageCodeDO object is not present in the request or mandatory attributes primary key is not present
 	*/
 	@Transactional
 	public TxnTransferObj merge(TxnTransferObj txnTransferObj) throws YugandharCommonException {
@@ -95,7 +95,7 @@ public class ConfigLanguageCodeService {
 	*@since 1.0
 	*@param  txnTransferObj  Transfer Object TxnTransferObj instance
 	*@return  txnTransferObj Returns the Transfer Object TxnTransferObj instance populated with database instance 
-	*@throws YugandharCommonException if ConfigLanguageCodeDO object is not present in the request or mandatory attributes primary key is not present
+*@throws YugandharCommonException yugandhar common exception if ConfigLanguageCodeDO object is not present in the request or mandatory attributes primary key is not present
 	*/
 	@Transactional(readOnly = true)
 	public TxnTransferObj findById(TxnTransferObj txnTransferObj) throws YugandharCommonException {
@@ -122,7 +122,7 @@ public class ConfigLanguageCodeService {
 	*@since 1.0
 	*@param  txnTransferObj  Transfer Object TxnTransferObj instance
 	*@return  txnTransferObj Returns the Transfer Object TxnTransferObj instance populated with database instance 
-	*@throws YugandharCommonException if ConfigLanguageCodeDO object is not present in the request or mandatory attributes business key is not present
+*@throws YugandharCommonException yugandhar common exception if ConfigLanguageCodeDO object is not present in the request or mandatory attributes business key is not present
 	*/
 	@Transactional(readOnly = true)
 	public TxnTransferObj findByBusinessKey(TxnTransferObj txnTransferObj) throws YugandharCommonException {

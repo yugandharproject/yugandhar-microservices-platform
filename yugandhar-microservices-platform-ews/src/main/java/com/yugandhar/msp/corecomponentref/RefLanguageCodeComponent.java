@@ -44,7 +44,7 @@ import com.yugandhar.msp.keygen.YugandharKeygenerator;
  * @author Yugandhar
  * @version 1.0
  * @since 1.0
- * @see Documentation
+ * 
  */
 
 @Scope(value = "prototype")
@@ -598,12 +598,9 @@ public class RefLanguageCodeComponent {
 	 * Execute the query using JPA Repository
 	 * 
 	 * @since 1.0
-	 * @param String
-	 *            configLanguageCodeKey
-	 * @param String
-	 *            key
-	 * @param String
-	 *            filter
+	 * @param configLanguageCodeKey config language code key
+	 * @param key key
+	 * @param filter Filter can be of type ACTIVE, INACTIVE or ALL
 	 * @return RefLanguageCodeDO returns the populated RefLanguageCodeDO object
 	 */
 	@CacheResult(cacheName = "REFLANGUAGECODE_BUSKEY")

@@ -1,0 +1,17 @@
+com.yugandhar.cache.ehcache.eventlogger
+com.yugandhar.common.aop.logger
+com.yugandhar.common.constant
+com.yugandhar.common.exception
+com.yugandhar.common.extern.transferobj
+com.yugandhar.common.transobj
+com.yugandhar.common.util
+com.yugandhar.jms
+com.yugandhar.msp.auth
+com.yugandhar.msp.bootapplication
+com.yugandhar.msp.component.util
+com.yugandhar.msp.config
+com.yugandhar.msp.corecomponentref
+com.yugandhar.msp.dobj
+com.yugandhar.msp.keygen
+com.yugandhar.msp.misc.dobj
+com.yugandhar.rest.controller

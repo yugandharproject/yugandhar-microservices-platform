@@ -19,7 +19,7 @@ import com.yugandhar.msp.misc.dobj.PrimaryKeyDO;
 *@author Yugandhar
 *@version 1.0
 *@since 1.0
-*@see com.yugandhar.msp.config.errorcoderegistry.ConfigErrorcodeRegistryDO
+*@see com.yugandhar.msp.dobj.ConfigErrorcodeRegistryDO
 */
 
 @MappedSuperclass

@@ -13,7 +13,7 @@ import org.springframework.beans.BeanWrapperImpl;
  * @author Yugandhar
  * @version 1.0
  * @since 1.0
- * @see Documentation
+ * 
  */
 
 public class IgnoreAttributesUtil {
@@ -34,8 +34,7 @@ public class IgnoreAttributesUtil {
      * Gets the properties which have null values from the given object.
      * 
      * @param obj source object
-     * 
-     * @return  ArrayList<String> arraylist of property names.
+     * @return arraylist list of property names.
      */
     public static ArrayList<String> getListOfNullProperties(Object obj) {
         final BeanWrapper src = new BeanWrapperImpl(obj);

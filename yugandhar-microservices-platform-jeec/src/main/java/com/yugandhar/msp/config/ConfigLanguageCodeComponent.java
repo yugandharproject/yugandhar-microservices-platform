@@ -32,7 +32,7 @@ import com.yugandhar.msp.keygen.YugandharKeygenerator;
  * @author Yugandhar
  * @version 1.0
  * @since 1.0
- * @see Documentation
+ * 
  */
 
 @Component
@@ -500,12 +500,8 @@ public class ConfigLanguageCodeComponent {
 	 * Execute the query using JPA Repository
 	 * 
 	 * @since 1.0
-	 * @param String
-	 *            configLanguageCodeKey
-	 * @param String
-	 *            key
-	 * @param String
-	 *            filter
+	 * @param key key    
+	 * @param filter Filter can be of type ACTIVE, INACTIVE or ALL
 	 * @return ConfigLanguageCodeDO returns the populated ConfigLanguageCodeDO
 	 *         object
 	 */

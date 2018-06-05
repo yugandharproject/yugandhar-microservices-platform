@@ -30,7 +30,7 @@ import com.yugandhar.msp.keygen.YugandharKeygenerator;
 *@author Yugandhar
 *@version 1.0
 *@since 1.0
-*@see Documentation
+*
 */
 
 @Component
@@ -66,7 +66,7 @@ public class ConfigAppPropertiesComponent {
 	*@since 1.0
 	*@param  txnTransferObj  Transfer Object TxnTransferObj instance
 	*@return  txnTransferObj Returns the Transfer Object TxnTransferObj instance populated with persisted instance 
-	*@throws YugandharCommonException if ConfigAppPropertiesDO object is not present in the request or other mandatory attributes not present
+*@throws YugandharCommonException yugandhar common exception if ConfigAppPropertiesDO object is not present in the request or other mandatory attributes not present
 	*
 	*/
 	public TxnTransferObj persist(TxnTransferObj txnTransferObj) throws YugandharCommonException {
@@ -127,7 +127,7 @@ public class ConfigAppPropertiesComponent {
 	*@since 1.0
 	*@param  txnTransferObj  Transfer Object TxnTransferObj instance
 	*@return  txnTransferObj Returns the Transfer Object TxnTransferObj instance populated with database instance 
-	*@throws YugandharCommonException if ConfigAppPropertiesDO object is not present in the request or mandatory attributes primary key is not present
+*@throws YugandharCommonException yugandhar common exception if ConfigAppPropertiesDO object is not present in the request or mandatory attributes primary key is not present
 	*/
 
 	public TxnTransferObj merge(TxnTransferObj txnTransferObj) {
@@ -194,7 +194,7 @@ public class ConfigAppPropertiesComponent {
 	*@since 1.0
 	*@param  txnTransferObj  Transfer Object TxnTransferObj instance
 	*@return  txnTransferObj Returns the Transfer Object TxnTransferObj instance populated with database instance 
-	*@throws YugandharCommonException if ConfigAppPropertiesDO object is not present in the request or mandatory attributes primary key is not present
+*@throws YugandharCommonException yugandhar common exception if ConfigAppPropertiesDO object is not present in the request or mandatory attributes primary key is not present
 	*/
 	public TxnTransferObj findById(TxnTransferObj txnTransferObj) {
 		respTxnTransferObj = new TxnTransferObj();
@@ -236,7 +236,7 @@ public class ConfigAppPropertiesComponent {
 	*@since 1.0
 	*@param  txnTransferObj  Transfer Object TxnTransferObj instance
 	*@return  txnTransferObj Returns the Transfer Object TxnTransferObj instance populated with database instance 
-	*@throws YugandharCommonException if ConfigAppPropertiesDO object is not present in the request or mandatory attributes business key is not present
+*@throws YugandharCommonException yugandhar common exception if ConfigAppPropertiesDO object is not present in the request or mandatory attributes business key is not present
 	*/
 	private void performCommonvalidationBeforePersist(TxnTransferObj txnTransferObj) {
 		commonValidationUtil.validateHeaderForInternalTxn(txnTransferObj);
@@ -269,7 +269,7 @@ public class ConfigAppPropertiesComponent {
 	*@since 1.0
 	*@param  txnTransferObj  Transfer Object TxnTransferObj instance
 	*@return  txnTransferObj Returns the Transfer Object TxnTransferObj instance populated with database instance 
-	*@throws YugandharCommonException if ConfigAppPropertiesDO object is not present in the request or mandatory attributes business key is not present
+*@throws YugandharCommonException yugandhar common exception if ConfigAppPropertiesDO object is not present in the request or mandatory attributes business key is not present
 	*/
 	private void performCommonvalidationBeforeMerge(TxnTransferObj txnTransferObj) {
 		commonValidationUtil.validateHeaderForInternalTxn(txnTransferObj);
@@ -310,7 +310,7 @@ public class ConfigAppPropertiesComponent {
 	*@since 1.0
 	*@param  txnTransferObj  Transfer Object TxnTransferObj instance
 	*@return  txnTransferObj Returns the Transfer Object TxnTransferObj instance populated with database instance 
-	*@throws YugandharCommonException if ConfigAppPropertiesDO object is not present in the request or mandatory attributes business key is not present
+*@throws YugandharCommonException yugandhar common exception if ConfigAppPropertiesDO object is not present in the request or mandatory attributes business key is not present
 	*/
 	private void performCommonvalidationBeforeFindById(TxnTransferObj txnTransferObj) {
 
@@ -334,7 +334,7 @@ public class ConfigAppPropertiesComponent {
 	*@since 1.0
 	*@param  txnTransferObj  Transfer Object TxnTransferObj instance
 	*@return  txnTransferObj Returns the Transfer Object TxnTransferObj instance populated with database instance 
-	*@throws YugandharCommonException if ConfigAppPropertiesDO object is not present in the request or mandatory attributes business key is not present
+*@throws YugandharCommonException yugandhar common exception if ConfigAppPropertiesDO object is not present in the request or mandatory attributes business key is not present
 	*/
 
 	public TxnTransferObj findByBusinessKey(TxnTransferObj txnTransferObj) {
@@ -378,9 +378,8 @@ public class ConfigAppPropertiesComponent {
 	/**
 	* Execute the query using JPA Repository 
 	*@since 1.0
-	*@param  String languageCodeRefkey
-	*@param String key 
-	*@param String filter
+	*@param key key of type String  
+	*@param filter filter for inquiry having valid values as ACTIVE, INACTIVE or ALL
 	*@return  ConfigAppPropertiesDO returns the populated ConfigAppPropertiesDO object
 	*/
 	@CacheResult(cacheName = "CONFIGAPPPROPERTIES_BUSKEY")
@@ -406,7 +405,7 @@ public class ConfigAppPropertiesComponent {
 	*@since 1.0
 	*@param  txnTransferObj  Transfer Object TxnTransferObj instance
 	*@return  txnTransferObj Returns the Transfer Object TxnTransferObj instance populated with database instance 
-	*@throws YugandharCommonException if ConfigAppPropertiesDO object is not present in the request or mandatory attributes business key is not present
+*@throws YugandharCommonException yugandhar common exception if ConfigAppPropertiesDO object is not present in the request or mandatory attributes business key is not present
 	*/
 	private void performCommonvalidationBeforeFindByBusinessKey(TxnTransferObj txnTransferObj) {
 		commonValidationUtil.validateHeaderForInternalTxn(txnTransferObj);

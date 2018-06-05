@@ -24,7 +24,7 @@ public class RefLanguageCodeComponentRule {
 	*Pre execute persist validation method for RefLanguageCodeComp to validate mandatory attributes etc
 	* This method is modularized in respective rule class
 	* Use Aspect Oriented Programming (AOP) based Yugandhar Rule to override / extend the default OOTB validation
-	*@throws YugandharCommonException 
+*@throws YugandharCommonException yugandhar common exception 
 	*/
 	public void prevalidateRefLanguageCodeCompPersit(TxnTransferObj txnTransferObj) {
 		// TODO Auto-generated method stub
@@ -34,7 +34,7 @@ public class RefLanguageCodeComponentRule {
 	*Pre execute merge validation method for RefLanguageCodeComp to validate mandatory attributes etc
 	* This method is modularized in respective rule class
 	* Use Aspect Oriented Programming (AOP) based Yugandhar Rule to override / extend the default OOTB validation
-	*@throws YugandharCommonException 
+*@throws YugandharCommonException yugandhar common exception 
 	*/
 	public void PrevalidateRefLanguageCodeCompMerge(TxnTransferObj txnTransferObj) {
 		// TODO Auto-generated method stub
@@ -44,7 +44,7 @@ public class RefLanguageCodeComponentRule {
 	*Pre execute findbyId validation method for RefLanguageCodeComp to validate mandatory attributes etc
 	* This method is modularized in respective rule class
 	* Use Aspect Oriented Programming (AOP) based Yugandhar Rule to override / extend the default OOTB validation
-	*@throws YugandharCommonException 
+*@throws YugandharCommonException yugandhar common exception 
 	*/
 	public void prevalidateRefLanguageCodeCompFindById(TxnTransferObj txnTransferObj) {
 		// TODO Auto-generated method stub
@@ -55,7 +55,7 @@ public class RefLanguageCodeComponentRule {
 	*Pre execute findByBusinessKey validation method for RefLanguageCodeComp to validate mandatory attributes etc
 	* This method is modularized in respective rule class
 	* Use Aspect Oriented Programming (AOP) based Yugandhar Rule to override / extend the default OOTB validation
-	*@throws YugandharCommonException 
+*@throws YugandharCommonException yugandhar common exception 
 	*/
 	public void preValidateRefLanguageCodefindByBusinessKey(TxnTransferObj txnTransferObj) {
 		// TODO Auto-generated method stub
@@ -66,7 +66,7 @@ public class RefLanguageCodeComponentRule {
 	*Pre execute rule for persist in RefLanguageCodeComp
 	* This method is modularized in respective rule class
 	* Use Aspect Oriented Programming (AOP) based Yugandhar Rule to override / extend the default OOTB validation
-	*@throws YugandharCommonException 
+*@throws YugandharCommonException yugandhar common exception 
 	*/
 	public void preExecuteRefLanguageCodeCompPersist(RefLanguageCodeDO reqRefLanguageCodeDO,
 			TxnTransferObj txnTransferObj) {
@@ -78,7 +78,7 @@ public class RefLanguageCodeComponentRule {
 	*Pre execute rule for persist in RefLanguageCodeComp
 	* This method is modularized in respective rule class
 	* Use Aspect Oriented Programming (AOP) based Yugandhar Rule to override / extend the default OOTB validation
-	*@throws YugandharCommonException 
+*@throws YugandharCommonException yugandhar common exception 
 	*/
 	public void postExecuteRefLanguageCodeCompPersit(TxnTransferObj txnTransferObj) {
 		// TODO Auto-generated method stub
@@ -89,7 +89,7 @@ public class RefLanguageCodeComponentRule {
 	*Pre execute rule for merge in RefLanguageCodeComp
 	* This method is modularized in respective rule class
 	* Use Aspect Oriented Programming (AOP) based Yugandhar Rule to override / extend the default OOTB validation
-	*@throws YugandharCommonException 
+*@throws YugandharCommonException yugandhar common exception 
 	*/
 	public void preExecuteRefLanguageCodeCompMerge(RefLanguageCodeDO reqRefLanguageCodeDO,
 			RefLanguageCodeDO dbimageRefLanguageCodeDO, TxnTransferObj txnTransferObj) {
@@ -101,7 +101,7 @@ public class RefLanguageCodeComponentRule {
 	*Pre execute rule for merge in RefLanguageCodeComp
 	* This method is modularized in respective rule class
 	* Use Aspect Oriented Programming (AOP) based Yugandhar Rule to override / extend the default OOTB validation
-	*@throws YugandharCommonException 
+*@throws YugandharCommonException yugandhar common exception 
 	*/
 	public void postExecuteRefLanguageCodeCompMerge(TxnTransferObj txnTransferObj) {
 		// TODO Auto-generated method stub
@@ -112,7 +112,7 @@ public class RefLanguageCodeComponentRule {
 	*Pre execute rule for findbyId in RefLanguageCodeComp 
 	* This method is modularized in respective rule class
 	* Use Aspect Oriented Programming (AOP) based Yugandhar Rule to override / extend the default OOTB validation
-	*@throws YugandharCommonException 
+*@throws YugandharCommonException yugandhar common exception 
 	*/
 	public void postExecuteRefLanguageCodeCompFindById(TxnTransferObj txnTransferObj) {
 		// TODO Auto-generated method stub
@@ -123,7 +123,7 @@ public class RefLanguageCodeComponentRule {
 	*Pre execute rule for findByBusinessKey in RefLanguageCodeComp 
 	* This method is modularized in respective rule class
 	* Use Aspect Oriented Programming (AOP) based Yugandhar Rule to override / extend the default OOTB validation
-	*@throws YugandharCommonException 
+*@throws YugandharCommonException yugandhar common exception 
 	*/
 	public void preExecuteRefLanguageCodefindByBusinessKey(TxnTransferObj txnTransferObj) {
 		// TODO Auto-generated method stub
@@ -134,7 +134,7 @@ public class RefLanguageCodeComponentRule {
 	*Pre execute rule for findByBusinessKey in RefLanguageCodeComp 
 	* This method is modularized in respective rule class
 	* Use Aspect Oriented Programming (AOP) based Yugandhar Rule to override / extend the default OOTB validation
-	*@throws YugandharCommonException 
+*@throws YugandharCommonException yugandhar common exception 
 	*/
 	public void postExecuteRefLanguageCodefindByBusinessKey(TxnTransferObj txnTransferObj) {
 		// TODO Auto-generated method stub

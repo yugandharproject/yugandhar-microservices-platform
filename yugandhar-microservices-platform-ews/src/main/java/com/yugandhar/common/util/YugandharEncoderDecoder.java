@@ -8,7 +8,7 @@ import java.util.Base64;
  * @author Yugandhar
  * @version 2.0
  * @since 2.0
- * @see Documentation
+ * 
  */
 
 public class YugandharEncoderDecoder {
@@ -18,7 +18,7 @@ public class YugandharEncoderDecoder {
 	 * This method encodes the input string
 	 * 
 	 * @since 1.0
-	 * @param String input String to be encoded. The base64 encoder is used to encode the string
+	 * @param inputString input String to be encoded. The base64 encoder is used to encode the string
 	 * @return String encoded string as per base64 encoding
 	 *
 	 */
@@ -34,7 +34,7 @@ public class YugandharEncoderDecoder {
 	 * This method decodes the input string
 	 * 
 	 * @since 1.0
-	 * @param String input String to be decoded. The base64 decoder is used to decode the string
+	 * @param inputString input String to be decoded. The base64 decoder is used to decode the string
 	 * @return String decoded string as per base64 encoding
 	 *
 	 */
@@ -55,7 +55,7 @@ public class YugandharEncoderDecoder {
 	 * Example: YugandharEncoderDecoder decode bXlwYXNzd29yZA==
 
 	 * @since 2.0
-	 * @param String[] String array having Operation Name and String to be encoded/decoded
+	 * @param args String array having Operation Name and String to be encoded/decoded
 	 */
 	
 	public static void main(String[] args) {

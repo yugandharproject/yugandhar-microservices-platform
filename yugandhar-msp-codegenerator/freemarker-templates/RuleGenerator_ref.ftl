@@ -23,7 +23,7 @@ public class ${pojo.getDeclarationName()}ComponentRule {
 	/**
 	*Pre execute persist validation method for ${pojo.getDeclarationName()}Comp to validate mandatory attributes etc
 	* This method is modularized in respective rule class
-	*@throws YugandharCommonException 
+	*@throws YugandharCommonException yugandhar common exception 
 	*/
 	public void prevalidate${pojo.getDeclarationName()}CompPersit(TxnTransferObj txnTransferObj) {
 		// TODO Auto-generated method stub
@@ -32,7 +32,7 @@ public class ${pojo.getDeclarationName()}ComponentRule {
 	/**
 	*Pre execute merge validation method for ${pojo.getDeclarationName()}Comp to validate mandatory attributes etc
 	* This method is modularized in respective rule class
-	*@throws YugandharCommonException 
+	*@throws YugandharCommonException yugandhar common exception 
 	*/
 	public void Prevalidate${pojo.getDeclarationName()}CompMerge(TxnTransferObj txnTransferObj) {
 		// TODO Auto-generated method stub
@@ -41,7 +41,7 @@ public class ${pojo.getDeclarationName()}ComponentRule {
 	/**
 	*Pre execute findbyId validation method for ${pojo.getDeclarationName()}Comp to validate mandatory attributes etc
 	* This method is modularized in respective rule class
-	*@throws YugandharCommonException 
+	*@throws YugandharCommonException yugandhar common exception 
 	*/
 	public void prevalidate${pojo.getDeclarationName()}CompFindById(TxnTransferObj txnTransferObj) {
 		// TODO Auto-generated method stub
@@ -51,7 +51,7 @@ public class ${pojo.getDeclarationName()}ComponentRule {
 	/**
 	*Pre execute findByBusinessKey validation method for ${pojo.getDeclarationName()}Comp to validate mandatory attributes etc
 	* This method is modularized in respective rule class
-	*@throws YugandharCommonException 
+	*@throws YugandharCommonException yugandhar common exception 
 	*/
 	public void preValidate${pojo.getDeclarationName()}findByBusinessKey(TxnTransferObj txnTransferObj) {
 		// TODO Auto-generated method stub
@@ -62,7 +62,7 @@ public class ${pojo.getDeclarationName()}ComponentRule {
 	/**
 	*Pre execute rule for persist in ${pojo.getDeclarationName()}Comp
 	* This method is modularized in respective rule class
-	*@throws YugandharCommonException 
+	*@throws YugandharCommonException yugandhar common exception 
 	*/
 	public void preExecute${pojo.getDeclarationName()}CompPersist(${pojo.getDeclarationName()}DO req${pojo.getDeclarationName()}DO, TxnTransferObj txnTransferObj) {
 		// TODO Auto-generated method stub
@@ -72,7 +72,7 @@ public class ${pojo.getDeclarationName()}ComponentRule {
 	/**
 	*Pre execute rule for persist in ${pojo.getDeclarationName()}Comp
 	* This method is modularized in respective rule class
-	*@throws YugandharCommonException 
+	*@throws YugandharCommonException yugandhar common exception 
 	*/
 	public void postExecute${pojo.getDeclarationName()}CompPersit(TxnTransferObj txnTransferObj) {
 		// TODO Auto-generated method stub
@@ -82,7 +82,7 @@ public class ${pojo.getDeclarationName()}ComponentRule {
 	/**
 	*Pre execute rule for merge in ${pojo.getDeclarationName()}Comp
 	* This method is modularized in respective rule class
-	*@throws YugandharCommonException 
+	*@throws YugandharCommonException yugandhar common exception 
 	*/
 	public void preExecute${pojo.getDeclarationName()}CompMerge(${pojo.getDeclarationName()}DO req${pojo.getDeclarationName()}DO,
 			${pojo.getDeclarationName()}DO dbimage${pojo.getDeclarationName()}DO, TxnTransferObj txnTransferObj) {
@@ -93,7 +93,7 @@ public class ${pojo.getDeclarationName()}ComponentRule {
 	/**
 	*Pre execute rule for merge in ${pojo.getDeclarationName()}Comp
 	* This method is modularized in respective rule class
-	*@throws YugandharCommonException 
+	*@throws YugandharCommonException yugandhar common exception 
 	*/
 	public void postExecute${pojo.getDeclarationName()}CompMerge(TxnTransferObj txnTransferObj) {
 		// TODO Auto-generated method stub
@@ -103,7 +103,7 @@ public class ${pojo.getDeclarationName()}ComponentRule {
 	/**
 	*Pre execute rule for findbyId in ${pojo.getDeclarationName()}Comp 
 	* This method is modularized in respective rule class
-	*@throws YugandharCommonException 
+	*@throws YugandharCommonException yugandhar common exception 
 	*/
 	public void postExecute${pojo.getDeclarationName()}CompFindById(TxnTransferObj txnTransferObj) {
 		// TODO Auto-generated method stub
@@ -113,7 +113,7 @@ public class ${pojo.getDeclarationName()}ComponentRule {
 	/**
 	*Pre execute rule for findByBusinessKey in ${pojo.getDeclarationName()}Comp 
 	* This method is modularized in respective rule class
-	*@throws YugandharCommonException 
+	*@throws YugandharCommonException yugandhar common exception 
 	*/
 	public void preExecute${pojo.getDeclarationName()}findByBusinessKey(TxnTransferObj txnTransferObj) {
 		// TODO Auto-generated method stub
@@ -123,7 +123,7 @@ public class ${pojo.getDeclarationName()}ComponentRule {
 	/**
 	*Pre execute rule for findByBusinessKey in ${pojo.getDeclarationName()}Comp 
 	* This method is modularized in respective rule class
-	*@throws YugandharCommonException 
+	*@throws YugandharCommonException yugandhar common exception 
 	*/
 	public void postExecute${pojo.getDeclarationName()}findByBusinessKey(TxnTransferObj txnTransferObj) {
 		// TODO Auto-generated method stub

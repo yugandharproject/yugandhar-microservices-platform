@@ -43,7 +43,7 @@ import com.yugandhar.msp.keygen.YugandharKeygenerator;
  * @author Yugandhar
  * @version 1.0
  * @since 1.0
- * @see Documentation
+ * 
  */
 
 @Scope(value = "prototype")
@@ -626,12 +626,9 @@ public class AuthUserRoleAssocComponent {
 	 * Execute the query using JPA Repository
 	 * 
 	 * @since 1.0
-	 * @param String
-	 *            authRolesRegistryIdpk
-	 * @param String
-	 *            authUserRoleAssocIdpk
-	 * @param String
-	 *            filter
+	 * @param authRolesRegistryIdpk
+	 * @param authUserRegistryIdpk
+	 * @param filter
 	 * @return AuthUserRoleAssocDO returns the populated AuthUserRoleAssocDO
 	 *         object
 	 */

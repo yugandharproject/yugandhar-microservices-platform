@@ -17,7 +17,7 @@ import org.springframework.jms.support.destination.JndiDestinationResolver;
  * @author Yugandhar
  * @version 1.0
  * @since 1.0
- * @see Documentation
+ * 
  */
 
 @Configuration

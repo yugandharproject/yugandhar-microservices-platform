@@ -8,7 +8,7 @@ import com.yugandhar.common.extern.transferobj.TxnPayload;
  * @author Yugandhar
  * @version 1.0
  * @since 1.0
- * @see Documentation
+ * 
  */
 
 public class TxnTransferObj implements java.io.Serializable{

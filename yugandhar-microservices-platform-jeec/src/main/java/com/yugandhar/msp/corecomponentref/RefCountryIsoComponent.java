@@ -44,7 +44,7 @@ import com.yugandhar.msp.keygen.YugandharKeygenerator;
  * @author Yugandhar
  * @version 1.0
  * @since 1.0
- * @see Documentation
+ * 
  */
 
 @Scope(value = "prototype")
@@ -333,8 +333,9 @@ public class RefCountryIsoComponent {
 	}
 
 	/**
-	 * perform the common validation before updating RefCountryIsoDO object in the
-	 * database. populate updatedTimestamp, transaction reference Id and user
+	 * perform the common validation before updating RefCountryIsoDO object in
+	 * the database. populate updatedTimestamp, transaction reference Id and
+	 * user
 	 * 
 	 * @since 1.0
 	 * @param txnTransferObj
@@ -590,12 +591,9 @@ public class RefCountryIsoComponent {
 	 * Execute the query using JPA Repository
 	 * 
 	 * @since 1.0
-	 * @param String
-	 *            configLanguageCodeKey
-	 * @param String
-	 *            key
-	 * @param String
-	 *            filter
+	 * @param configLanguageCodeKey langage type key of type String
+	 * @param key key of type String 
+	 * @param filter filter for inquiry having valid values as ACTIVE, INACTIVE or ALL
 	 * @return RefCountryIsoDO returns the populated RefCountryIsoDO object
 	 */
 	@CacheResult(cacheName = "REFCOUNTRYISO_BUSKEY")

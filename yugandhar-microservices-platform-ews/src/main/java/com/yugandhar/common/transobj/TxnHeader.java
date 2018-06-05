@@ -7,7 +7,7 @@ package com.yugandhar.common.transobj;
  * @author Yugandhar
  * @version 1.0
  * @since 1.0
- * @see Documentation
+ * 
  */
 
 public class TxnHeader implements java.io.Serializable {
