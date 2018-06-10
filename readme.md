@@ -37,10 +37,10 @@ Comprehensive documentation about the project is provided for reference. Refer t
 
 You may start with the Architectural overview to understand the architectural components and capabilities of the Microservice platform. API Refrence Guide, Data Model Guide and Development And Customization Guide should follow the next. To take a dip dive on having hands on of running the applications refer the Development Environment Setup and Code Generation Guide.
 
-##Release Notes:  
+## Release Notes:  
 [http://www.yugandharproject.info/p/release-notes-for-yugandhar.html](http://www.yugandharproject.info/p/release-notes-for-yugandhar.html)
 
-##Project documentation:  
+## Project documentation:  
 [https://github.com/yugandharproject/yugandhar-microservices-platform/tree/master/resources/documentation](https://github.com/yugandharproject/yugandhar-microservices-platform/tree/master/resources/documentation)
 
 ## Javadoc
