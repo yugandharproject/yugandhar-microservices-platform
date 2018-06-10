@@ -1,4 +1,3 @@
-<![endif]-->
 
 # Yugandhar Microservice Platform
 
@@ -13,24 +12,22 @@ One can do the development with Minimal development environment having eclipse, 
 Wait is just over, clone the MSP source code repository, make customization and deploy on the go!!
 
 ## Capabilities and Salient Features
-
-•	Proven architecture for building Microservice.
-•	Supports embedded Web Server as well as JEE container web servers. 
- - MSP for EWS: The Yugandhar MSP for EWS runs with Springboot embedded web Server like tomcat. 
- - MSP for JEEC: The Yugandhar MSP for JEEC is built to be run on a Java Enterprise Edition Container (Web Server)   like Red Hat Jboss.
-
-•	Preconfigured for Maria DB and Oracle, can be extended to support other databases like MySQL, DB2, NoSQL, PostgreSQL etc.
-•	Fully configured JTA transaction manager, ORM framework and ActiveMQ integration.
-•	Rapid Development using Yugandhar Code generation Templates
-•	Preconfigured and customizable UUID based Primary Key generator
-•	Embedded and extendable data validations and business rules
-•	Multilingual Reference data (List of Values) management Capability
-•	preconfigured application and performance logging using logback
-•	User and role based Authorization
-•	Pagination feature for retrieve and search services
-•	Comprehensive Audit Log framework
-•	jsr107 compliant Ehcache based caching framework
-•	DevOps compliance and Maven Integration
+- Proven architecture for building Microservice.
+- Supports embedded Web Server as well as JEE container web servers. 
+	- MSP for EWS: The Yugandhar MSP for EWS runs with Springboot embedded web Server like tomcat.
+	- MSP for JEEC: The Yugandhar MSP for JEEC is built to be run on a Java Enterprise Edition Container (Web Server) like Red Hat Jboss.
+- Preconfigured for Maria DB and Oracle, can be extended to support other databases like MySQL, DB2, NoSQL, PostgreSQL etc.
+- Fully configured JTA transaction manager, ORM framework and ActiveMQ integration.
+- Rapid Development using Yugandhar Code generation Templates
+- Preconfigured and customizable UUID based Primary Key generator
+- Embedded and extendable data validations and business rules
+- Multilingual Reference data (List of Values) management Capability
+- preconfigured application and performance logging using logback
+- User and role based Authorization
+- Pagination feature for retrieve and search services
+- Comprehensive Audit Log framework
+- jsr107 compliant Ehcache based caching framework
+- DevOps compliance and Maven Integration
 
 ## Getting Started
 
@@ -40,8 +37,8 @@ Comprehensive documentation about the project is provided for reference. Refer t
 
 You may start with the Architectural overview to understand the architectural components and capabilities of the Microservice platform. API Refrence Guide, Data Model Guide and Development And Customization Guide should follow the next. To take a dip dive on having hands on of running the applications refer the Development Environment Setup and Code Generation Guide.
 
-## Release Notes:
-#### [http://www.yugandharproject.info/p/release-notes-for-yugandhar.html](http://www.yugandharproject.info/p/release-notes-for-yugandhar.html)
+####Release Notes:  
+[http://www.yugandharproject.info/p/release-notes-for-yugandhar.html](http://www.yugandharproject.info/p/release-notes-for-yugandhar.html)
 
 #### Project documentation:  
 [https://github.com/yugandharproject/yugandhar-microservices-platform/tree/master/resources/documentation](https://github.com/yugandharproject/yugandhar-microservices-platform/tree/master/resources/documentation)
